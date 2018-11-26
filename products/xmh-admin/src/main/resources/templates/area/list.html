@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head th:include="common/main_head :: head">
+    <title>地区管理</title>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-quick-sidebar-over-content ">
+<!-- BEGIN HEADER -->
+<div th:include="common/main_body_head :: bodyHead"></div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <div th:include="common/main_body_menu_up :: bodyMenuUp" class="page-sidebar-wrapper"></div>
+    <!-- END SIDEBAR -->
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="page-bar">
+                <ul class="page-breadcrumb">
+                    <li>
+                        <i class="fa fa-home"></i>
+                        <a th:href="@{/home}">主页</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a>系统管理</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a th:href="@{/area/list}">地区管理</a>
+                    </li>
+                </ul>
+            </div>
+            <form id="listForm" th:action="@{list}" th:method="get">
+                <div class="portlet box red-sunglo">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-list"></i>地区列表
+                        </div>
+                        <div class="tools">
+                            <a href="" class="collapse" data-original-title="" title="">
+                            </a>
+                            <a href="javascript:;" class="reload"></a>
+                        </div>
+                        <div class="actions">
+                            <a class="btn btn-default" th:href="@{${parent} ? 'add?parentId='+${parent.id} : 'add'}">
+                                <i class="fa fa-plus"></i>
+                                添加
+                            </a>
+                            <!--<div th:include="common/page_size_option :: pageSizeOption" class="btn-group"></div>-->
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <div class="table-scrollable">
+                            <table class="table table-striped table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <th colspan="5" style="text-align: center;">
+                                        <a th:if="${parent}"
+                                           th:href="@{${parent.parent} ? 'list?parentId='+${parent.parent.id} : 'list'}">上级地区</a>
+                                        <span th:text="${parent} ? '-'+${parent.name} : '顶级地区'"></span>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr th:each="row:${areas}">
+                                    <td th:each="area:${row}">
+                                        <div style="float: left">
+                                            <a th:href="@{|list?parentId=${area.id}|}" title="查看"
+                                               th:text="${area.name}"></a>
+                                        </div>
+                                        <div style="float: right">
+                                            <a th:href="@{|edit/${area.id}|}" class="btn default btn-xs purple">
+                                                <i class="icon-edit"></i> 编辑
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr th:if="${#lists.isEmpty(areas)}">
+                                    <td style="text-align: center; color: red;">无下级地区</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--<div th:include="common/pagination :: pag" class="row"></div>-->
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<div th:include="common/main_body_footer :: bodyFooter" class="page-footer"></div>
+<!-- END FOOTER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<div th:include="common/main_body_javascript :: js"></div>
+<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

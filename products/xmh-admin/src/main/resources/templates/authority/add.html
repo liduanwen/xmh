@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head th:include="common/main_head :: head">
+    <title>权限添加管理</title>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-quick-sidebar-over-content ">
+<!-- BEGIN HEADER -->
+<div th:include="common/main_body_head :: bodyHead"></div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <div th:include="common/main_body_menu_up :: bodyMenuUp"></div>
+    <!-- END SIDEBAR -->
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="page-bar">
+                <ul class="page-breadcrumb">
+                    <li>
+                        <i class="fa fa-home"></i>
+                        <a th:href="@{/home}">主页</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a>系统管理</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a th:href="@{/authority/list}">权限管理</a>
+                    </li>
+                </ul>
+            </div>
+            <form id="addForm" th:action="@{save}" th:method="post" class="form-horizontal" role="form">
+                <div class="portlet box red-sunglo">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-plus"></i>权限添加
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"><span class="required">* </span>权限分类：</label>
+                            <div class="col-md-4">
+                                <select name="authorityCategoryId" class="form-control">
+                                    <option th:each="authorityCategory:${authorityCategoryTree}"
+                                            th:value="${authorityCategory.id}"
+                                            th:text="${authorityCategory.name}"></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"><span class="required">* </span>权限名称：</label>
+                            <div class="col-md-4 input">
+                                <input type="text" name="name" class="form-control" maxlength="20" placeholder="权限名称"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"><span class="required">* </span>访问路径：</label>
+                            <div class="col-md-4 input">
+                                <input type="text" name="path" class="form-control" maxlength="50" placeholder="访问路径"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"><span class="required">* </span>权限：</label>
+                            <div class="col-md-4 input">
+                                <input type="text" name="authorityValue" class="form-control" maxlength="50"
+                                       placeholder="权限"/>
+                            </div>
+                        </div>
+                        <div class=" form-actions fluid">
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button type="submit" class="btn red-sunglo">提交</button>
+                                    <button id="backButton" type="button" class="btn default">返回</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<div th:include="common/main_body_footer :: bodyFooter" class="page-footer"></div>
+<!-- END FOOTER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<div th:include="common/main_body_javascript :: js"></div>
+<!-- END JAVASCRIPTS -->
+<script>
+    jQuery(document).ready(function () {
+        var $addForm = $("#addForm");
+        $addForm.validate({
+            rules: {
+                name: "required",
+                path: "required",
+                authorityValue: "required"
+            }
+        });
+    });
+</script>
+</body>
+<!-- END BODY -->
+</html>

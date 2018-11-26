@@ -1,0 +1,91 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<head>
+    <head th:include="/common/main_head :: head"></head>
+    <title>楠宇科技</title>
+</head>
+<body>
+<header th:include="/common/main_body_head :: bodyHeadNavgation" class="m-hd"></header>
+<div class="m-header-banner m-header-1"></div>
+<div class="am-container">
+    <article class="m-news-container">
+        <header>
+            <h1 class="am-fl" th:text="${news.title}"></h1>
+            <div class="am-fr">
+                <div class="m-here am-breadcrumb am-show-md-up"></div>
+            </div>
+            <div class="am-cf"></div>
+            <div class="am-text-xs">
+                <span><i class="am-icon-clock-o"></i> <label
+                        th:text="${#calendars.format(news.releaseDate,'yyyy-MM-dd')}"></label></span>
+                <span><i class="am-icon-check-square-o"></i> 点击：<label th:text="${news.clicks}"></label>次</span>
+            </div>
+        </header>
+        <section>
+            <label th:utext="${news.content}"></label>
+            <hr/>
+            <!--<h2>最新更新</h2>-->
+            <!--<ul class="am-avg-sm-2 am-avg-md-4 am-avg-lg-4 am-thumbnails">-->
+            <!--<li>-->
+
+            <!--<a href="/post/192"><img src="/views/IMJ2V2/images/loading.gif" alt="2017年国庆节、中秋节放假安排通知" data-echo="/uploadfiles/image/201609/2.jpg" class="am-img-responsive" data-bd-imgshare-binded="1"/></a>-->
+
+            <!--<h3><span class="am-fr am-text-xs">287</span><a href="/post/192">2017年国庆节、中秋节放假安</a></h3>-->
+            <!--<div class="m-web-relevantdesc">根据《国务院办公厅关于2017年部分节假日安排的通知》及工作室的工作调整，现将2017年国庆节、中秋节放假事项通知如下：10月1日（星期日）至8日（星期日）放假调休，共8天。9月30日（星期六）上班，10月9日节后正式...</div>-->
+
+            <!--</li>-->
+            <!--<li>-->
+
+            <!--<a href="/post/191"><img src="/views/IMJ2V2/images/loading.gif" alt="2017年春节放假安排通知" data-echo="/uploadfiles/image/201701/1.jpg" class="am-img-responsive" data-bd-imgshare-binded="1"/></a>-->
+
+            <!--<h3><span class="am-fr am-text-xs">4540</span><a href="/post/191">2017年春节放假安排通知</a></h3>-->
+            <!--<div class="m-web-relevantdesc">根据国家相关部门关于2017年春节假期安排的通知，结合我公司实际生产情况，经研究决定，对假期安排如下：2017年1月18日至2017年2月6日共放假20天。假期前生产安排：2017年1月18号停止接收订单，1月18号中午前收到的...</div>-->
+
+            <!--</li>-->
+            <!--<li>-->
+
+            <!--<a href="/post/186"><img src="/views/IMJ2V2/images/loading.gif" alt="2016年中秋节放假时间通知" data-echo="/uploadfiles/image/201609/2.jpg" class="am-img-responsive" data-bd-imgshare-binded="1"/></a>-->
+
+            <!--<h3><span class="am-fr am-text-xs">583</span><a href="/post/186">2016年中秋节放假时间通知</a></h3>-->
+            <!--<div class="m-web-relevantdesc">根据《国务院办公厅关于2016年部分节假日安排的通知》中的相关规定，现将我公司2016年中秋节放假安排通知如下：9月15日至9月17日放假调休，共3天。9月18日上班。中秋节：2016年9月15日至9月17日放假共3天。其中9月15...</div>-->
+
+            <!--</li>-->
+            <!--<li>-->
+
+            <!--<a href="/post/165"><img src="/views/IMJ2V2/images/loading.gif" alt="2016春节放假安排通知" data-echo="/uploadfiles/image/201602/1.jpg" class="am-img-responsive" data-bd-imgshare-binded="1"/></a>-->
+
+            <!--<h3><span class="am-fr am-text-xs">384</span><a href="/post/165">2016春节放假安排通知</a></h3>-->
+            <!--<div class="m-web-relevantdesc">2016春节放假安排时间如下：2016年2月7日至2016年2月14日，放假8日，2月15日正常上班。</div>-->
+
+            <!--</li>-->
+            <!--<li>-->
+            <!--<h3><span class="am-fr am-text-xs">384</span><a href="/post/165">2016春节放假安排通知</a></h3>-->
+            <!--<div class="m-web-relevantdesc">2016春节放假安排时间如下：2016年2月7日至2016年2月14日，放假8日，2月15日正常上班。</div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<h3><span class="am-fr am-text-xs">406</span><a href="/post/1">如何选择合适的域名</a></h3>-->
+            <!--<div class="m-web-relevantdesc">为中小企业提供合理的价格，我们不评价更低价的网站建设服务的不足，但也相信商业服务品质与价格的那个平衡点。为中小企业提供合理的价格，我们不评价更低价的网站建设服务的不足，但也相信商业服务品质与价格的那个...</div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<h3><span class="am-fr am-text-xs">522</span><a href="/post/151">台山社保局</a></h3>-->
+            <!--<div class="m-web-relevantdesc">网站名称：台山社保局网站类别：台山政府网站、政府网站、台山政府垂直单位、政府垂直单位、社保局网站描述：台山市社会保险基金管理局网设有首页、机构职能、人事任免、网上办事、政策法规、信息公开、社保知识、网...</div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<h3><span class="am-fr am-text-xs">134</span><a href="/post/34">江门赶集网</a></h3>-->
+            <!--<div class="m-web-relevantdesc">网站名称：江门赶集网网站网址：http://jiangmen.ganji.com/网站标题：【江门赶集网】-免费发布信息-江门分类信息门户网站描述：江门赶集网，是江门更专业的分类信息网！免费发布查询房屋租售、求职招聘、二手物品、...</div>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <!--<hr/>-->
+        </section>
+    </article>
+</div>
+<footer th:include="/common/main_body_footer :: bodyFooter" class="m-footer"></footer>
+<div th:include="/common/main_body_javascript :: js"></div>
+</body>
+</html>

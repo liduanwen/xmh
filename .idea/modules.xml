@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/XMH.iml" filepath="$PROJECT_DIR$/XMH.iml" />
+      <module fileurl="file://$PROJECT_DIR$/products/xmh-admin/xmh-admin.iml" filepath="$PROJECT_DIR$/products/xmh-admin/xmh-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/products/xmh-api/xmh-api.iml" filepath="$PROJECT_DIR$/products/xmh-api/xmh-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/common/xmh-common.iml" filepath="$PROJECT_DIR$/modules/common/xmh-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/domain/xmh-domain.iml" filepath="$PROJECT_DIR$/modules/domain/xmh-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/xmh-modules.iml" filepath="$PROJECT_DIR$/modules/xmh-modules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/products/xmh-products.iml" filepath="$PROJECT_DIR$/products/xmh-products.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/repository/xmh-repository.iml" filepath="$PROJECT_DIR$/modules/repository/xmh-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/service/xmh-service.iml" filepath="$PROJECT_DIR$/modules/service/xmh-service.iml" />
+    </modules>
+  </component>
+</project>

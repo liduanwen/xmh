@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head th:include="common/main_head :: head">
+    <title>地区编辑管理</title>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-quick-sidebar-over-content ">
+<!-- BEGIN HEADER -->
+<div th:include="common/main_body_head :: bodyHead"></div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <div th:include="common/main_body_menu_up :: bodyMenuUp"></div>
+    <!-- END SIDEBAR -->
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="page-bar">
+                <ul class="page-breadcrumb">
+                    <li>
+                        <i class="fa fa-home"></i>
+                        <a th:href="@{/home}">主页</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a>系统管理</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a th:href="@{/area/list}">地区管理</a>
+                    </li>
+                </ul>
+            </div>
+            <form id="editForm" th:action="@{/area/update}" th:method="post" class="form-horizontal" role="form">
+                <input type="hidden" name="id" th:value="${area.id}"/>
+                <div class="portlet box red-sunglo">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-edit"></i>地区编辑
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"><span class="required">* </span>上级地区：</label>
+                            <div class="col-md-4 input">
+                                <label th:text="${area.parent} ? ${area.parent.name} : '顶级地区'"
+                                       class="control-label"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"><span class="required">* </span>名称：</label>
+                            <div class="col-md-4 input">
+                                <input type="text" name="name" class="form-control" maxlength="100" placeholder="名称"
+                                       th:value="${area.name}"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">排序：</label>
+                            <div class="col-md-4">
+                                <input type="number" name="order" class="form-control" maxlength="9" min="1"
+                                       placeholder="排序" th:value="${area.order}"/>
+                            </div>
+                        </div>
+                        <div class=" form-actions fluid">
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button type="submit" class="btn red-sunglo">提交</button>
+                                    <button id="backButton" type="button" class="btn default">返回</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<div th:include="common/main_body_footer :: bodyFooter" class="page-footer"></div>
+<!-- END FOOTER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<div th:include="common/main_body_javascript :: js"></div>
+<!-- END JAVASCRIPTS -->
+<script>
+    jQuery(document).ready(function () {
+        var $editForm = $("#editForm");
+        $editForm.validate({
+            rules: {
+                name: "required"
+            }
+        });
+    });
+</script>
+</body>
+<!-- END BODY -->
+</html>

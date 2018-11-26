@@ -1,0 +1,62 @@
+<!--导航栏-->
+<header th:fragment="bodyHeadNavgation">
+    <section class="am-show-md-up">
+        <div class="am-container">
+            <a th:href="@{/}" rel="nofollow" class="m-logo"><i class="am-icon-spinner"></i> J2 Network</a>
+            <!--        <ul class="am-fr m-about">
+                        <li><a href="/about/" class="am-btn am-btn-danger am-btn-sm am-radius" rel="nofollow">关于我们</a></li>
+                        <li><a href="/contact/" class="am-btn am-btn-danger am-btn-sm am-radius" rel="nofollow">联系我们</a></li>
+                    </ul> -->
+            <nav>
+                <ul class="m-nav am-nav am-nav-pills am-fr">
+                    <li id="index"><a th:href="@{/index?navigationId=index}" rel="nofollow">网站首页</a></li>
+                    <li id="caseIndex"><a th:href="@{/case/index?navigationId=caseIndex}" rel="nofollow">工程案例</a></li>
+                    <li id="serviceIndex"><a th:href="@{/service/index?navigationId=serviceIndex}"
+                                             rel="nofollow">服务内容</a></li>
+                    <li id="outsourceIndex"><a th:href="@{/outsource/index?navigationId=outsourceIndex}" rel="nofollow">外包优势</a>
+                    </li>
+                    <li id="newsIndex"><a th:href="@{/news/index?navigationId=newsIndex}" rel="nofollow">最新动态</a></li>
+                    <li id="aboutIndex"><a th:href="@{/about/index?navigationId=aboutIndex}" rel="nofollow">关于我们</a>
+                    </li>
+                    <li id="contactIndex"><a th:href="@{/contact/index?navigationId=contactIndex}"
+                                             rel="nofollow">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+
+    <!--<nav data-am-widget="header" class="am-header am-show-sm-only">-->
+    <!--<div class="am-header-left am-header-nav">-->
+    <!--<a th:href="@{/}" rel="nofollow">-->
+    <!--<i class="am-header-icon am-icon-home"></i> 首页-->
+    <!--</a>-->
+    <!--</div>-->
+    <!--<h1 class="am-header-title">-->
+    <!--<a th:href="@{/}" rel="nofollow">俊贰网络</a>-->
+    <!--</h1>-->
+    <!--<div class="am-header-right am-header-nav">-->
+    <!--&lt;!&ndash;<a th:href="#right-link" class="" data-am-offcanvas="{target: '#r-nav'}">&ndash;&gt;-->
+    <!--&lt;!&ndash;<i class="am-header-icon am-icon-bars"></i> 菜单&ndash;&gt;-->
+    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+    <!--</div>-->
+    <!--</nav>-->
+
+    <!-- 侧边栏内容 -->
+    <!--<div id="r-nav" class="am-offcanvas">-->
+    <!--<div class="am-offcanvas-bar am-offcanvas-bar-flip">-->
+    <!--<nav class="am-offcanvas-content">-->
+    <!--<a th:href="@{/}" rel="nofollow"><span class="logo"></span></a>-->
+    <!--<p><i class="am-icon-home"></i> <a th:href="@{/}" rel="nofollow">网站首页</a></p>-->
+    <!--<p><i class="am-icon-desktop"></i> <a th:href="@{/anli.html}" rel="nofollow">案例展示</a></p>-->
+    <!--<p><i class="am-icon-cogs"></i> <a th:href="@{/fuwu.html}" rel="nofollow">服务内容</a></p>-->
+    <!--<p><i class="am-icon-credit-card"></i> <a th:href="@{/zixun.html}" rel="nofollow">最新动态</a></p>-->
+
+    <!--<p><i class="am-icon-user"></i> <a th:href="@{/about.html}" rel="nofollow">关于我们</a></p>-->
+    <!--<p><i class="am-icon-qq"></i> <a th:href="@{/contact.html}" rel="nofollow">联系我们</a></p>-->
+    <!--</nav>-->
+    <!--</div>-->
+    <!--</div>-->
+</header>
+
+

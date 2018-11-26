@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head th:include="common/main_head :: head">
+    <title>系统设置</title>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-quick-sidebar-over-content ">
+<!-- BEGIN HEADER -->
+<div th:include="common/main_body_head :: bodyHead"></div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <div th:include="common/main_body_menu_up :: bodyMenuUp"></div>
+    <!-- END SIDEBAR -->
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="page-bar">
+                <ul class="page-breadcrumb">
+                    <li>
+                        <i class="fa fa-home"></i>
+                        <a th:href="@{/home}">主页</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a>系统管理</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a th:href="@{/admin/list}">系统设置</a>
+                    </li>
+                </ul>
+            </div>
+            <form id="addForm" th:action="@{update}" th:method="post" class="form-horizontal" role="form"
+                  enctype="multipart/form-data">
+                <div class="portlet box red-sunglo">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-plus"></i>系统设置
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#base" data-toggle="tab">基本设置</a>
+                            </li>
+                            <li>
+                                <a href="#show" data-toggle="tab">显示设置</a>
+                            </li>
+                            <li>
+                                <a href="#registerSecurity" data-toggle="tab">注册与安全</a>
+                            </li>
+                            <!--<li>-->
+                            <!--<a href="#mail" data-toggle="tab">邮件设置</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                            <!--<a href="#other" data-toggle="tab">其它设置</a>-->
+                            <!--</li>-->
+                        </ul>
+                        <div class="tab-content">
+                            <div id="base" class="tab-pane fade in active">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span class="required">* </span>网站名称：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="siteName" class="form-control"
+                                               th:value="${setting.siteName}" maxlength="200" placeholder="网站名称"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span class="required">* </span>网站网址：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="siteUrl" class="form-control"
+                                               th:value="${setting.siteUrl}" maxlength="200" placeholder="网站网址"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span class="required">* </span>logo：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="logo" class="form-control" th:value="${setting.logo}"
+                                               maxlength="200" placeholder="logo"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span class="required">* </span>联系地址：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="address" class="form-control"
+                                               th:value="${setting.address}" maxlength="200" placeholder="联系地址"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span class="required">* </span>联系电话：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="phone" class="form-control" th:value="${setting.phone}"
+                                               maxlength="200" placeholder="联系电话"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span
+                                            class="required">* </span>E-mail：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="email" class="form-control" th:value="${setting.email}"
+                                               maxlength="200" placeholder="E-mail"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="show" class="tab-pane fade">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span
+                                            class="required">* </span>商品图片(大)：</label>
+                                    <div class="col-md-4 input">
+                                        <label class="control-label">宽度：</label>
+                                        <input type="text" name="largeProductImageWidth" class="text"
+                                               th:value="${setting.largeProductImageWidth}" maxlength="9"
+                                               style="width: 50px;" placeholder="单位: 像素"/>
+                                        <label class="control-label">高度：</label>
+                                        <input type="text" name="largeProductImageHeight" class="text"
+                                               th:value="${setting.largeProductImageHeight}" maxlength="9"
+                                               style="width: 50px;" placeholder="单位: 像素"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span
+                                            class="required">* </span>商品图片(中)：</label>
+                                    <div class="col-md-4 input">
+                                        <label class="control-label">宽度：</label>
+                                        <input type="text" name="mediumProductImageWidth" class="text"
+                                               th:value="${setting.mediumProductImageWidth}" maxlength="9"
+                                               style="width: 50px;" placeholder="单位: 像素"/>
+                                        <label class="control-label">高度：</label>
+                                        <input type="text" name="mediumProductImageHeight" class="text"
+                                               th:value="${setting.mediumProductImageHeight}" maxlength="9"
+                                               style="width: 50px;" placeholder="单位: 像素"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span
+                                            class="required">* </span>商品图片(缩略)：</label>
+                                    <div class="col-md-4 input">
+                                        <label class="control-label">宽度：</label>
+                                        <input type="text" name="thumbnailProductImageWidth" class="text"
+                                               th:value="${setting.thumbnailProductImageWidth}" maxlength="9"
+                                               style="width: 50px;" placeholder="单位: 像素"/>
+                                        <label class="control-label">高度：</label>
+                                        <input type="text" name="thumbnailProductImageHeight" class="text"
+                                               th:value="${setting.thumbnailProductImageHeight}" maxlength="9"
+                                               style="width: 50px;" placeholder="单位: 像素"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span
+                                            class="required">* </span>默认商品图片(大)：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="file" multiple="multiple" name="defaultLargeProductImage"
+                                               class="file browserButton" th:value="${setting.defaultLargeProductImage}"
+                                               data-overwrite-initial="false" data-min-file-count="1"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span
+                                            class="required">* </span>默认商品图片(中)：</label>
+                                    <div class="col-md-4 input">
+                                        <span class="fieldSet">
+                                            <input type="text" name="defaultMediumProductImage" class="form-control"
+                                                   th:value="${setting.defaultMediumProductImage}" maxlength="200"/>
+                                        </span>
+                                    </div>
+                                    <div class="col-md-2 input">
+                                        <span class="fieldSet">
+                                            <input type="button" class="btn red-sunglo" value="选择文件"/>
+                                            <a th:href="${setting.defaultMediumProductImage}" target="_blank">查看</a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span
+                                            class="required">* </span>默认商品图片(缩略)：</label>
+                                    <div class="col-md-4 input">
+                                        <span class="fieldSet">
+                                            <input type="text" name="defaultThumbnailProductImage" class="form-control"
+                                                   th:value="${setting.defaultThumbnailProductImage}" maxlength="200"/>
+                                        </span>
+                                    </div>
+                                    <div class="col-md-2 input">
+                                        <span class="fieldSet">
+                                            <input type="button" class="btn red-sunglo" value="选择文件"/>
+                                            <a th:href="${setting.defaultThumbnailProductImage}" target="_blank">查看</a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span class="required">* </span>水印透明度：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="watermarkAlpha" class="form-control"
+                                               th:value="${setting.watermarkAlpha}" maxlength="9"
+                                               placeholder="取值范围: 0-100, 0代表完全透明"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span class="required">* </span>水印图片：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="file" multiple="multiple" name="watermarkImageFile"
+                                               class="file browserButton" data-overwrite-initial="false"
+                                               data-min-file-count="1"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span class="required">* </span>水印位置：</label>
+                                    <div class="col-md-4 input">
+                                        <select name="watermarkPosition" class="form-control">
+                                            <option th:each="watermarkPosition:${watermarkPositions}"
+                                                    th:value="${watermarkPosition}" th:text="${watermarkPositions}"
+                                                    th:selected="${watermarkPosition == setting.watermarkPosition}"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span
+                                            class="required">* </span>价格精确位数：</label>
+                                    <div class="col-md-4 input">
+                                        <select name="priceScale" class="form-control">
+                                            <option value="0" th:selected="${setting.priceScale == 0}">无小数位</option>
+                                            <option value="1" th:selected="${setting.priceScale == 1}">1位小数</option>
+                                            <option value="2" th:selected="${setting.priceScale == 2}">2位小数</option>
+                                            <option value="3" th:selected="${setting.priceScale == 3}">3位小数</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span
+                                            class="required">* </span>价格精确方式：</label>
+                                    <div class="col-md-4 input">
+                                        <select name="priceRoundType" class="form-control">
+                                            <option th:each="roundType:${roundTypes}" th:value="${roundType}"
+                                                    th:text="${roundType}"
+                                                    th:selected="${roundType == setting.priceRoundType}"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span
+                                            class="required">* </span>是否前台显示市场价：</label>
+                                    <div class="col-md-4 input">
+                                        <label class="checkbox-inline" style="padding-left: 0px;">
+                                            <input type="checkbox" name="isShowMarketPrice" value="true"
+                                                   th:checked="${setting.isShowMarketPrice}"/>
+                                            <input type="hidden" name="_isShowMarketPrice" value="false"/>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span
+                                            class="required">* </span>默认市场价换算比例：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="defaultMarketPriceScale" class="form-control"
+                                               th:value="${setting.defaultMarketPriceScale}" maxlength="7"
+                                               placeholder="系统将根据该比例与销售价自动计算市场价"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="registerSecurity" class="tab-pane fade">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span
+                                            class="required">* </span>用户名最小长度：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="usernameMinLength" class="form-control"
+                                               th:value="${setting.usernameMinLength}" maxlength="3"
+                                               placeholder="用户名最小长度"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span
+                                            class="required">* </span>用户名最大长度：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="usernameMaxLength" class="form-control"
+                                               th:value="${setting.usernameMaxLength}" maxlength="3"
+                                               placeholder="用户名最大长度"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span
+                                            class="required">* </span>密码最小长度：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="passwordMinLength" class="form-control"
+                                               th:value="${setting.passwordMinLength}" maxlength="3"
+                                               placeholder="密码最小长度"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span
+                                            class="required">* </span>密码最大长度：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="passwordMaxLength" class="form-control"
+                                               th:value="${setting.passwordMaxLength}" maxlength="3"
+                                               placeholder="密码最大长度"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span
+                                            class="required">* </span>连续登录失败最大次数：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="accountLockCount" class="form-control"
+                                               th:value="${setting.accountLockCount}" maxlength="3"
+                                               placeholder="连续登录失败最大次数"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span
+                                            class="required">* </span>自动解锁时间：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="accountLockTime" class="form-control"
+                                               th:value="${setting.accountLockTime}" maxlength="9"
+                                               placeholder="自动解锁时间"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div id="mail" class="tab-pane fade">-->
+                            <!--<div class="form-group">-->
+                            <!--<label class="col-md-3 control-label"><span class="required">* </span>发件人邮箱：</label>-->
+                            <!--<div class="col-md-4 input">-->
+                            <!--<input type="text" name="smtpFromMail" class="form-control" th:value="${setting.smtpFromMail}" maxlength="10" placeholder="发件人邮箱" />-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                            <!--<label class="col-md-3 control-label"><span class="required">* </span>SMTP服务器地址：</label>-->
+                            <!--<div class="col-md-4 input">-->
+                            <!--<input type="text" name="smtpHost" class="form-control" th:value="${setting.smtpHost}" maxlength="10" placeholder="SMTP服务器地址" />-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                            <!--<label class="col-md-3 control-label"><span class="required">* </span>SMTP服务器端口：</label>-->
+                            <!--<div class="col-md-4 input">-->
+                            <!--<input type="text" name="smtpPort" class="form-control" th:value="${setting.smtpPort}" maxlength="10" placeholder="SMTP服务器端口" />-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                            <!--<label class="col-md-3 control-label"><span class="required">* </span>SMTP用户名：</label>-->
+                            <!--<div class="col-md-4 input">-->
+                            <!--<input type="text" name="smtpUsername" class="form-control" th:value="${setting.smtpUsername}" maxlength="10" placeholder="SMTP用户名" />-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                            <!--<label class="col-md-3 control-label"><span class="required">* </span>SMTP密码：</label>-->
+                            <!--<div class="col-md-4 input">-->
+                            <!--<input type="text" name="smtpPassword" class="form-control" th:value="${setting.smtpPassword}" maxlength="10" placeholder="SMTP密码" />-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                            <!--<label class="col-md-3 control-label"><span class="required">* </span>测试邮箱：</label>-->
+                            <!--<div class="col-md-4 input">-->
+                            <!--收件人邮箱:<input type="text" name="toMail" class="form-control" maxlength="10" placeholder="测试邮箱" />-->
+                            <!--<button>邮件测试</button>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div id="other" class="tab-pane fade">-->
+                            <!--<div class="form-group">-->
+                            <!--<label class="col-md-3 control-label"><span class="required">* </span>货币符号：</label>-->
+                            <!--<div class="col-md-4 input">-->
+                            <!--<input type="text" name="currencySign" class="form-control" th:value="${setting.currencySign}" maxlength="200" placeholder="货币符号" />-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                            <!--<label class="col-md-3 control-label"><span class="required">* </span>货币单位：</label>-->
+                            <!--<div class="col-md-4 input">-->
+                            <!--<input type="text" name="currencyUnit" class="form-control" th:value="${setting.currencyUnit}" maxlength="200" placeholder="货币单位" />-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                            <!--<label class="col-md-3 control-label"><span class="required">* </span>库存警告数：</label>-->
+                            <!--<div class="col-md-4 input">-->
+                            <!--<input type="text" name="stockAlertCount" class="form-control" th:value="${setting.stockAlertCount}" maxlength="9" placeholder="库存警告数" />-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                            <!--<label class="col-md-3 control-label"><span class="required">* </span>库存分配时间点：</label>-->
+                            <!--<div class="col-md-4 input">-->
+                            <!--<select name="stockAllocationTime" class="form-control">-->
+                            <!--<option th:each="stockAllocationTime:${stockAllocationTimes}" th:value="${stockAllocationTime}" th:text="${stockAllocationTime}"-->
+                            <!--th:selected="${stockAllocationTime == setting.stockAllocationTime}"></option>-->
+                            <!--</select>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                            <!--<label class="col-md-3 control-label"><span class="required">* </span>默认积分换算比例：</label>-->
+                            <!--<div class="col-md-4 input">-->
+                            <!--<input type="text" name="defaultPointScale" class="form-control" th:value="${setting.defaultPointScale}" maxlength="7" placeholder="默认积分换算比例" />-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                            <!--<label class="col-md-3 control-label"><span class="required">* </span>是否开启开发模式：</label>-->
+                            <!--<div class="col-md-4 input">-->
+                            <!--<label class="checkbox-inline" style="padding-left: 0px;" title="开启该模式将关闭部分系统缓存，重启WEB服务器后生效">-->
+                            <!--<input type="checkbox" name="isDevelopmentEnabled" value="true" th:checked="${setting.isDevelopmentEnabled}" />-->
+                            <!--<input type="hidden" name="_isDevelopmentEnabled" value="false" />-->
+                            <!--</label>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                        </div>
+                        <div class=" form-actions fluid">
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button type="submit" class="btn red-sunglo">提交</button>
+                                    <button id="backButton" type="button" class="btn default">返回</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<div th:include="common/main_body_footer :: bodyFooter" class="page-footer"></div>
+<!-- END FOOTER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<div th:include="common/main_body_javascript :: js"></div>
+<!-- END JAVASCRIPTS -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" type="text/javascript"></script>-->
+<script th:inline="javascript">
+    var $browserButton = $("input.browserButton");
+    $browserButton.upload();
+
+    jQuery(document).ready(function () {
+
+        /*<![CDATA[*/
+
+        var $addForm = $("#addForm");
+
+        $addForm.validate({
+            rules: {
+                username: "required",
+                password: "required",
+                rePassword: {
+                    required: true,
+                    equalTo: "#password"
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                roleIds: "required",
+                name: "required",
+                department: "required"
+            }
+        });
+
+        /*]]>*/
+    });
+
+</script>
+</body>
+<!-- END BODY -->
+</html>

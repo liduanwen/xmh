@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head th:include="common/main_head :: head">
+    <title>管理员添加管理</title>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-quick-sidebar-over-content ">
+<!-- BEGIN HEADER -->
+<div th:include="common/main_body_head :: bodyHead"></div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <div th:include="common/main_body_menu_up :: bodyMenuUp"></div>
+    <!-- END SIDEBAR -->
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="page-bar">
+                <ul class="page-breadcrumb">
+                    <li>
+                        <i class="fa fa-home"></i>
+                        <a th:href="@{/home}">主页</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a>系统管理</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a th:href="@{/admin/list}">管理员管理</a>
+                    </li>
+                </ul>
+            </div>
+            <form id="addForm" th:action="@{save}" th:method="post" class="form-horizontal" role="form">
+                <div class="portlet box red-sunglo">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-plus"></i>管理员添加
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#base" data-toggle="tab">基本信息</a>
+                            </li>
+                            <li>
+                                <a href="#personal" data-toggle="tab">个人资料</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="base" class="tab-pane fade in active">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span class="required">* </span>用户名：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="username" class="form-control" maxlength="20"
+                                               placeholder="用户名"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span class="required">* </span>密码：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="password" name="password" class="form-control" id="password"
+                                               maxlength="20" placeholder="密码"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span class="required">* </span>确认密码：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="password" name="rePassword" class="form-control" maxlength="20"
+                                               placeholder="确认密码"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span class="required">* </span>邮箱：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="email" class="form-control" maxlength="200"
+                                               placeholder="邮箱"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">设置：</label>
+                                    <div class="col-md-4">
+                                        <label class="checkbox-inline" style="padding-left: 0px;">
+                                            <input type="checkbox" name="isEnabled" value="true" checked="checked"/>是否启用
+                                            <input type="hidden" name="_isEnabled" value="false"/>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span class="required">* </span>角色：</label>
+                                    <div class="col-md-4 input">
+                                        <label class="control-label" th:each="role:${roles}">
+                                            <input type="checkbox" name="roleIds" th:value="${role.id}"/>
+                                            <label th:text="${role.name}"></label>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="personal" class="tab-pane fade">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span class="required">* </span>昵称：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="nickname" class="form-control" maxlength="10"
+                                               placeholder="昵称"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span class="required">* </span>姓名：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="name" class="form-control" maxlength="10"
+                                               placeholder="姓名"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label"><span class="required">* </span>部门：</label>
+                                    <div class="col-md-4 input">
+                                        <input type="text" name="department" class="form-control" maxlength="11"
+                                               placeholder="部门"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" form-actions fluid">
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button type="submit" class="btn red-sunglo">提交</button>
+                                    <button id="backButton" type="button" class="btn default">返回</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<div th:include="common/main_body_footer :: bodyFooter" class="page-footer"></div>
+<!-- END FOOTER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<div th:include="common/main_body_javascript :: js"></div>
+<!-- END JAVASCRIPTS -->
+<script>
+    jQuery(document).ready(function () {
+        var $addForm = $("#addForm");
+        $addForm.validate({
+            rules: {
+                username: {
+                    required: true,
+                    remote: {
+                        url: "check_username",
+                        cache: false
+                    }
+                },
+                password: "required",
+                rePassword: {
+                    required: true,
+                    equalTo: "#password"
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                roleIds: "required",
+                nickname: "required",
+                name: "required",
+                department: "required"
+            }
+        });
+    });
+</script>
+</body>
+<!-- END BODY -->
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head th:include="common/main_head :: head">
+    <title>产品管理</title>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-quick-sidebar-over-content ">
+<!-- BEGIN HEADER -->
+<div th:include="common/main_body_head :: bodyHead"></div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <div th:include="common/main_body_menu_up :: bodyMenuUp" class="page-sidebar-wrapper"></div>
+    <!-- END SIDEBAR -->
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="page-bar">
+                <ul class="page-breadcrumb">
+                    <li>
+                        <i class="fa fa-home"></i>
+                        <a th:href="@{/home}">主页</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a>产品管理</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a th:href="@{/product/list}">产品管理</a>
+                    </li>
+                </ul>
+            </div>
+            <form id="listForm" th:action="@{list}" th:method="get">
+                <div class="portlet box red-sunglo">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-list"></i>产品列表
+                        </div>
+                        <div class="tools">
+                            <a href="" class="collapse" data-original-title="" title="">
+                            </a>
+                            <a href="javascript:;" class="reload"></a>
+                        </div>
+                        <div class="actions">
+                            <a class="btn btn-default" th:href="@{add}">
+                                <i class="fa fa-plus"></i>
+                                添加
+                            </a>
+                            <div th:include="common/page_size_option :: pageSizeOption" class="btn-group"></div>
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <div class="table-scrollable">
+                            <table class="table table-striped table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <th>地区</th>
+                                    <th>景区</th>
+                                    <th>名称</th>
+                                    <th>原价</th>
+                                    <th>优惠价</th>
+                                    <th>创建时间</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr th:each="product:${page.content}">
+                                    <td>
+                                        <label th:text="${product.scenicSpot.area.fullName}"></label>
+                                    </td>
+                                    <td>
+                                        <label th:text="${product.scenicSpot.name}"></label>
+                                    </td>
+                                    <td>
+                                        <label th:text="${product.name}"></label>
+                                    </td>
+                                    <td>
+                                        <label th:text="${#numbers.formatCurrency(product.originalPrice)}"
+                                               style="color: red;text-decoration:line-through;"></label>
+                                    </td>
+                                    <td>
+                                        <label th:text="${#numbers.formatCurrency(product.preferentialPrice)}"
+                                               style="color: green;"></label>
+                                    </td>
+                                    <td>
+                                        <label th:text="${#calendars.format(product.createDate,'yyyy-MM-dd HH:mm:ss')}"></label>
+                                    </td>
+                                    <td>
+                                        <a th:href="@{|edit/${product.id}|}" class="btn default btn-xs purple">
+                                            <i class="icon-edit"></i> 编辑
+                                        </a>
+                                        |
+                                        <a th:href="@{|view/${product.id}|}" class="btn default btn-xs purple">
+                                            <i class="fa fa-search"></i> 查看
+                                        </a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div th:include="common/pagination :: pag" class="row"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<div th:include="common/main_body_footer :: bodyFooter" class="page-footer"></div>
+<!-- END FOOTER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<div th:include="common/main_body_javascript :: js"></div>
+<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

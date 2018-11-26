@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <jmxConfigurator/>
+    <!-- TRACE < DEBUG < INFO < WARN < ERROR-->
+    <!-- 控制台输出日志 -->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <!-- 文件保存日志 按时间滚动（每天一个） 并且 按大小滚动（10MB一个） -->
+    <appender name="defaultLogFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>admin-logs/xmh-admin.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>admin-logs/xmh-admin.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!-- 保留 30天数据，默认无限-->
+            <maxHistory>30</maxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- show parameters for hibernate sql 专为 Hibernate 定制 -->
+    <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="WARN"/>
+    <logger name="org.hibernate.type.descriptor.sql.BasicExtractor" level="WARN"/>
+    <logger name="org.hibernate.SQL" level="WARN"/>
+    <logger name="org.hibernate.engine.QueryParameters" level="WARN"/>
+    <logger name="org.hibernate.engine.query.HQLQueryPlan" level="WARN"/>
+    <!--hibernate end-->
+    <!-- root -->
+    <root level="INFO">
+        <appender-ref ref="console"/>
+        <appender-ref ref="defaultLogFile"/>
+    </root>
+</configuration>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+<head>
+    <head th:include="/common/main_head :: head"></head>
+    <title>楠宇科技</title>
+</head>
+<body>
+<header th:include="/common/main_body_head :: bodyHeadNavgation" class="m-hd"></header>
+<div class="m-header-banner m-list-header" style="background: url(/images/service-bg.jpg) 50% 0 no-repeat fixed;">
+    <section class="am-container">
+        <hgroup data-am-scrollspy="{animation:'slide-bottom', delay: 317}">
+            <h2>服务内容</h2>
+            <p>我们期待与您的携手，以设计驱动企业价值增长，我们与伙伴共同成长。</p>
+        </hgroup>
+    </section>
+</div>
+<nav class="m-cat-nav">
+    <ul class="am-container">
+        <li><a th:href="@{/service/index?navigationId=serviceIndex}"><i class="icon-chevron-right"></i>服务内容</a></li>
+        <li class="am-active"><a th:href="@{/service/cooperation?navigationId=serviceIndex}"><i
+                class="icon-chevron-right"></i>合作流程</a></li>
+        <li><a th:href="@{/service/payment_method?navigationId=serviceIndex}"><i class="icon-chevron-right"></i>付款方式</a>
+        </li>
+    </ul>
+</nav>
+<div class="am-container">
+    <article class="m-mn-box m-mn-container">
+        <section>
+            <p><strong>流程如下：</strong></p>
+            <ul class="step">
+                <li>
+                    <h3>现场勘验</h3>
+                    <p>目的为勘测施工现场是否具备弱电项目施工标准，并与强电施工团队做好衔接工作，避免强弱电施工冲突。</p>
+                </li>
+                <li class="st">
+                    <h3>需求评估、确认</h3>
+                    <p>
+                        就客户提供的工程的需求，如：有线/WIFI网络范围、程控电话分布、工位摆放、监控点覆盖范围、门禁系统要求等。双方沟通讨论，并对弱电项目需求的合理性和可行性分析评估后给出合理建议，以达成共识。</p>
+                </li>
+                <li class="st">
+                    <h3>设计图纸</h3>
+                    <p>将确认后的全部需求全部落实到图纸，再与客户进行最终的弱电项目确认，并进行管材、线材等设备用量统计后报价。</p>
+                </li>
+                <li class="st">
+                    <h3>支付定金</h3>
+                    <p>客户确定图纸无改动后，需支付全部项目费用的50%作为预付款。</p>
+                </li>
+                <li>
+                    <h3>综合布线</h3>
+                    <p>由项目经理带队，安排专业的弱电技术工人按照图纸要求进行标准化施工作业，中途如客户需求改变，需项目经理做需求可行性分析后出具解决建议。</p>
+                </li>
+                <li class="st">
+                    <h3>安装调试</h3>
+                    <p>综合布线工程结束后，根据整体工期合理安排设备安装调试时间，务必要在整体工期结束前完成弱电系统项目，且协助客户做好工程验收工作。</p>
+                </li>
+                <li class="st">
+                    <h3>支付余款</h3>
+                    <p>支付尾款后，我们将工程与客户进行技术交底，协助客户进行后期工程微调和维护；至此，整个弱电系统施工流程完成。</p>
+                </li>
+                <li class="st">
+                    <h3>售后服务</h3>
+                    <p>我们为每一位为客户提供长期在线人性化售后服务支持和线下上门维护服务，保障客户弱电系统运行在最佳状态; 具体售后服务内容请查询售后服务协议。</p>
+                </li>
+            </ul>
+        </section>
+    </article>
+</div>
+<footer th:include="/common/main_body_footer :: bodyFooter" class="m-footer"></footer>
+<div th:include="/common/main_body_javascript :: js"></div>
+</body>
+</html>

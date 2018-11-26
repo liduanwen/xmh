@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common" />
+        <module name="domain" />
+        <module name="growup-admin" />
+        <module name="growup-common" />
+        <module name="growup-domain" />
+        <module name="growup-repository" />
+        <module name="growup-service" />
+        <module name="xmh-admin" />
+        <module name="xmh-api" />
+        <module name="xmh-common" />
+        <module name="xmh-domain" />
+        <module name="xmh-repository" />
+        <module name="xmh-service" />
+        <module name="xmh-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
+      <module name="domain" target="1.8" />
+      <module name="grow-products" target="1.8" />
+      <module name="GrowUp" target="1.8" />
+      <module name="growup-admin" target="1.8" />
+      <module name="growup-common" target="1.8" />
+      <module name="growup-domain" target="1.8" />
+      <module name="growup-modules" target="1.8" />
+      <module name="growup-repository" target="1.8" />
+      <module name="growup-service" target="1.8" />
+      <module name="HNY" target="1.8" />
+      <module name="hny-web" target="1.8" />
+      <module name="modules" target="1.8" />
+      <module name="products" target="1.8" />
+      <module name="XMH" target="1.8" />
+      <module name="xmh-admin" target="1.8" />
+      <module name="xmh-api" target="1.8" />
+      <module name="xmh-common" target="1.8" />
+      <module name="xmh-domain" target="1.8" />
+      <module name="xmh-modules" target="1.8" />
+      <module name="xmh-products" target="1.8" />
+      <module name="xmh-repository" target="1.8" />
+      <module name="xmh-service" target="1.8" />
+      <module name="xmh-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

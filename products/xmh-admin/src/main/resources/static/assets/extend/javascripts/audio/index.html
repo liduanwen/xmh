@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="application/javascript" src="/assets/extend/javascripts/audio/audio.min.js"></script>
+<script type="application/javascript" src="/assets/extend/javascripts/audio/audio.common.js"></script>
+<span style="white-space:pre"></span>
+<audio controls autoplay></audio>
+<input type="button" value="开始录音" onclick="startRecording()"/>
+<input type="button" value="获取录音" onclick="obtainRecord()"/>
+<input type="button" value="停止录音" onclick="stopRecord()"/>
+<input type="button" value="播放录音" onclick="playRecord()"/>
+
+<video id="video1" width="320px" height="240px" controls autoplay></video>
+<video id="video2" width="320px" height="240px" controls autoplay></video>
+<canvas id="canvas1" width="320" height="240"></canvas>
+<input type="button" value="拍摄" onclick="scamera()"/>
+<input type="button" value="播放视频" onclick="playVideo()"/>
+
+<!--<div class="form-group">-->
+<!--<label class="col-md-3 control-label"><span class="required">* </span>录音：</label>-->
+<!--<div class="col-md-4 input">-->
+<!--<button type="button" class="btn red-sunglo" th:onclick="|javascript:startRecording();|">录音</button>-->
+<!--<button type="button" class="btn red-sunglo" th:onclick="|javascript:obtainRecord();|">获取录音</button>-->
+<!--<button type="button" class="btn red-sunglo" th:onclick="|javascript:stopRecord();|">停止</button>-->
+<!--&lt;!&ndash;<button type="button" class="btn red-sunglo" th:onclick="|javascript:playRecord();|">播放录音</button>&ndash;&gt;-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="form-group">-->
+<!--<label class="col-md-3 control-label"></label>-->
+<!--<div id="playback" class="hidden">-->
+<!--<span style="white-space:pre"></span>-->
+<!--<audio controls></audio>-->
+<!--</div>-->
+<!--</div>-->
+</body>
+</html>

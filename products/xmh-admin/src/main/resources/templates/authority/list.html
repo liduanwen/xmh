@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head th:include="common/main_head :: head">
+    <title>权限管理</title>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-quick-sidebar-over-content ">
+<!-- BEGIN HEADER -->
+<div th:include="common/main_body_head :: bodyHead"></div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <div th:include="common/main_body_menu_up :: bodyMenuUp" class="page-sidebar-wrapper"></div>
+    <!-- END SIDEBAR -->
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="page-bar">
+                <ul class="page-breadcrumb">
+                    <li>
+                        <i class="fa fa-home"></i>
+                        <a th:href="@{/home}">主页</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a>系统管理</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a th:href="@{/authority/list}">权限管理</a>
+                    </li>
+                </ul>
+            </div>
+            <form id="listForm" th:action="@{list}" th:method="get">
+                <div class="portlet box red-sunglo">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-list"></i>权限列表
+                        </div>
+                        <div class="tools">
+                            <a href="javascript:;" class="reload"></a>
+                        </div>
+                        <div class="actions">
+                            <a class="btn btn-default" th:href="@{add}">
+                                <i class="fa fa-plus"></i>
+                                添加
+                            </a>
+                            <a id="deleteButton" class="btn btn-default" disabled="disabled">
+                                <i class="fa fa-trash-o"></i>
+                                删除
+                            </a>
+                            <div th:include="common/page_size_option :: pageSizeOption" class="btn-group"></div>
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <div class="table-scrollable">
+                            <table id="listTable" class="table table-striped table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <th><input type="checkbox" id="selectAll"/>全选</th>
+                                    <th>权限分类</th>
+                                    <th>名称</th>
+                                    <th>访问路径</th>
+                                    <th>权限</th>
+                                    <th>创建时间</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr th:each="authority:${page.content}">
+                                    <td><input type="checkbox" name="ids" th:value="${authority.id}"/></td>
+                                    <td>
+                                        <label th:text="${authority.authorityCategory.name}"></label>
+                                    </td>
+                                    <td>
+                                        <label th:text="${authority.name}"></label>
+                                    </td>
+                                    <td>
+                                        <label th:text="${authority.path}"></label>
+                                    </td>
+                                    <td>
+                                        <label th:text="${authority.authorityValue}"></label>
+                                    </td>
+                                    <td>
+                                        <label th:text="${#calendars.format(authority.createDate,'yyyy-MM-dd HH:mm:ss')}"></label>
+                                    </td>
+                                    <td>
+                                        <a th:href="@{|edit/${authority.id}|}" class="btn default btn-xs purple">
+                                            <i class="icon-edit"></i> 编辑
+                                        </a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div th:include="common/pagination :: pag" class="row"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<div th:include="common/main_body_footer :: bodyFooter" class="page-footer"></div>
+<!-- END FOOTER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<div th:include="common/main_body_javascript :: js"></div>
+<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

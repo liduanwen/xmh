@@ -1,0 +1,50 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<head>
+    <head th:include="/common/main_head :: head"></head>
+    <title>楠宇科技</title>
+</head>
+<body>
+<header th:include="/common/main_body_head :: bodyHeadNavgation" class="m-hd"></header>
+<div class="m-header-banner m-list-header" style="background: url(/images/news-bg.jpg) 50% 0 no-repeat fixed;">
+    <section class="am-container">
+        <hgroup data-am-scrollspy="{animation:'slide-bottom', delay: 314}">
+            <h2>最新动态</h2>
+            <p>这里有最新的公司动态，这里有最新的网站设计、移动端设计、网页相关内容与你分享！</p>
+        </hgroup>
+    </section>
+</div>
+<nav class="m-cat-nav"></nav>
+<section class="am-container m-news">
+    <div class="m-container am-g">
+        <article class="am-cf" th:each="news:${page.content}">
+            <div class="am-u-lg-2 am-u-md-12 m-news-date am-hide-md-down">
+                <span class="m-date-num" th:text="${#calendars.format(news.releaseDate,'dd')}"></span>
+                <label th:text="${#calendars.format(news.releaseDate,'yyyy-MM')}"></label>
+            </div>
+            <div class="am-u-lg-10 am-u-md-12 am-u-sm-12">
+                <h3><a th:href="@{|/news/view/${news.id}|}" th:text="${news.title}"></a></h3>
+                <div class="m-news-data">
+                    <span><i class="am-icon-clock-o"></i> <label
+                            th:text="${#calendars.format(news.releaseDate,'yyyy-MM-dd')}"></label></span>
+                    <span><i class="am-icon-check-square-o"></i> 点击<label th:text="${news.clicks}"></label>次</span>
+                </div>
+                <div class="m-news-data">
+                    <label th:text="${#strings.abbreviate(news.summary, 100)}" th:title="${news.summary}"></label>
+                </div>
+                <a th:href="@{|/news/view/${news.id}|}" class="am-btn am-btn-danger am-radius am-btn-xs" rel="nofollow">READ
+                    MORE</a>
+            </div>
+        </article>
+    </div>
+</section>
+<footer th:include="/common/main_body_footer :: bodyFooter" class="m-footer"></footer>
+<div th:include="/common/main_body_javascript :: js"></div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+<head>
+    <head th:include="/common/main_head :: head"></head>
+    <title>楠宇科技</title>
+</head>
+<body>
+<header th:include="/common/main_body_head :: bodyHeadNavgation" class="m-hd"></header>
+<div class="m-header-banner m-list-header" style="background: url(/images/service-bg.jpg) 50% 0 no-repeat fixed;">
+    <section class="am-container">
+        <hgroup data-am-scrollspy="{animation:'slide-bottom', delay: 317}">
+            <h2>服务内容</h2>
+            <p>我们期待与您的携手，以设计驱动企业价值增长，我们与伙伴共同成长。</p>
+        </hgroup>
+    </section>
+</div>
+<nav class="m-cat-nav">
+    <ul class="am-container">
+        <li class="am-active"><a th:href="@{/service/index?navigationId=serviceIndex}"><i
+                class="icon-chevron-right"></i>服务内容</a></li>
+        <li><a th:href="@{/service/cooperation?navigationId=serviceIndex}"><i class="icon-chevron-right"></i>合作流程</a>
+        </li>
+        <li><a th:href="@{/service/payment_method?navigationId=serviceIndex}"><i class="icon-chevron-right"></i>付款方式</a>
+        </li>
+    </ul>
+</nav>
+
+<section class="am-container m-service-page">
+    <div class="m-service-container">
+        <h2>服务体系</h2>
+        <ul class="am-avg-sm-1 am-avg-md-1 am-avg-lg-1 am-thumbnails m-service-list">
+            <li>
+                <div class="am-u-lg-2 am-u-md-12 m-service-list-icon am-hide-md-down">
+                    <img src="/images/service/zhbx.png"/>
+                </div>
+                <div class="am-u-lg-10 am-u-md-12 am-u-sm-12">
+                    <h3>综合布线</h3>
+                    <p>工作区子系统 、 水平子系统 、 干线子系统 、 管理子系统 、 设备间子系统 、 建筑群干线子系统</p>
+                </div>
+            </li>
+            <li>
+                <div class="am-u-lg-2 am-u-md-12 m-service-list-icon am-hide-md-down">
+                    <img src="/images/service/afjk.png"/>
+                </div>
+                <div class="am-u-lg-10 am-u-md-12 am-u-sm-12">
+                    <h3>安防监控</h3>
+                    <p>数字监控系统 、 周界报警系统 、 停车场管理系统 、 模拟监控系统 、 电梯五方报警系统 、 GPS定位系统</p>
+                </div>
+            </li>
+            <li>
+                <div class="am-u-lg-2 am-u-md-12 m-service-list-icon am-hide-md-down">
+                    <img src="/images/service/gbxt.png"/>
+                </div>
+                <div class="am-u-lg-10 am-u-md-12 am-u-sm-12">
+                    <h3>广播系统</h3>
+                    <p>紧急广播系统 、 校园广播系统 、 扩/放声系统 、 语音对讲系统 、 电教广播系统 、 可视对讲系统</p>
+                </div>
+            </li>
+            <li>
+                <div class="am-u-lg-2 am-u-md-12 m-service-list-icon am-hide-md-down">
+                    <img src="/images/service/yckz.png"/>
+                </div>
+                <div class="am-u-lg-10 am-u-md-12 am-u-sm-12">
+                    <h3>集团程控系统</h3>
+                    <p>热线服务 、 遇忙回叫 、 缩位拨号 、 三方通话 、 呼出限制 、 内线代接 、 多外线呼叫 、 遇忙转移</p>
+                </div>
+            </li>
+            <li>
+                <div class="am-u-lg-2 am-u-md-12 m-service-list-icon am-hide-md-down">
+                    <img src="/images/service/wlgc.png"/>
+                </div>
+                <div class="am-u-lg-10 am-u-md-12 am-u-sm-12">
+                    <h3>网络工程</h3>
+                    <p>网站建设 、 企业WIFI管理 、 服务器维护 、 网络设备维修 、 电脑维护 、 办公设备维护</p>
+                </div>
+            </li>
+            <li>
+                <div class="am-u-lg-2 am-u-md-12 m-service-list-icon am-hide-md-down">
+                    <img src="/images/service/rjxt.png"/>
+                </div>
+                <div class="am-u-lg-10 am-u-md-12 am-u-sm-12">
+                    <h3>软件系统</h3>
+                    <p>财务系统 、 OA系统 、 CRM客户管理系统 、 零售终端 、 GPS车辆定位系统 、 PLM研发系统物联网平台 、 ERP管理系统 、 收粮系统</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<footer th:include="/common/main_body_footer :: bodyFooter" class="m-footer"></footer>
+<div th:include="/common/main_body_javascript :: js"></div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<div th:fragment="pag">
+    <div class="page">
+        <!-- 上一页 -->
+        <a class="page_prev" th:classappend="${page.first} ? disabled : ''"
+           th:href="!${page.first} ? |javascript:void(0);|" th:onclick="!${page.first} ? |javascript:$.pageSkip(this);|"
+           th:attr="pageIndex=*{page.number - 1} ? ${page.number - 1} : 0"> &laquo; </a>
+        <!-- 迭代生成页码 -->
+        <a th:class="${(page.number + 1) eq i} ? 'thisclass' : ''"
+           th:each="i : ${#numbers.sequence(1, page.totalPages gt (page.number + 2) ? page.number + 3 : page.totalPages)}"
+           th:text="${i}" th:attr="pageIndex=${i} - 1" href="javascript:void(0);"
+           th:onclick="|javascript:$.pageSkip(this);|"></a>
+        <!-- 下一页 -->
+        <a class="page_next" th:classappend="${page.last} ? disabled : ''"
+           th:href="!${page.last} ? |javascript:void(0);|" th:onclick="!${page.last} ? |javascript:$.pageSkip(this);|"
+           th:attr="pageIndex=${page.number} + 1"> &raquo; </a>
+        <input type="hidden" id="pageSize" name="size" th:value="${page.size}"/>
+        <input type="hidden" id="pageNumber" name="page" th:value="${page.number}" maxlength="9"/>
+    </div>
+</div>
+

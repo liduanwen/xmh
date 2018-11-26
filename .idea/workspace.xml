@@ -1,0 +1,1646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="xmh-common" />
+      <module name="xmh-domain" />
+      <module name="xmh-repository" />
+      <module name="xmh-service" />
+    </loaded-modules>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="4edd2085-a48f-4980-899c-99c9e63bb8df" name="Default" comment="提交项目" />
+    <ignored path="GrowUp.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="$PROJECT_DIR$/modules/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/products/target/" />
+    <ignored path="$PROJECT_DIR$/modules/common/target/" />
+    <ignored path="$PROJECT_DIR$/modules/domain/target/" />
+    <ignored path="$PROJECT_DIR$/modules/growup-repository/target/" />
+    <ignored path="$PROJECT_DIR$/modules/repository/target/" />
+    <ignored path="$PROJECT_DIR$/modules/service/target/" />
+    <ignored path="$PROJECT_DIR$/products/growup-admin/target/" />
+    <ignored path="$PROJECT_DIR$/products/hny-admin/target/" />
+    <ignored path="$PROJECT_DIR$/products/hny-web/target/" />
+    <ignored path="$PROJECT_DIR$/products/xmh-admin/target/" />
+    <ignored path="$PROJECT_DIR$/products/xmh-web/target/" />
+    <ignored path="$PROJECT_DIR$/products/xmh-api/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/HNY$HnyAdminApplication.coverage" NAME="HnyAdminApplication Coverage Results" MODIFIED="1512114957506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.xuyufengyy.hny.redis.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="xmh@39.106.135.60" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="GrowUp">
+      <favorite_root url="file://$PROJECT_DIR$/modules" module="XMH" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+        <favorite_root url="file://$PROJECT_DIR$/modules/common" module="xmh-common" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/modules/common/src" module="xmh-common" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/modules/common/src/main" module="xmh-common" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/modules/common/src/main/java" module="xmh-common" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/modules/common/src/main/java/com" module="xmh-common" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/modules/common/src/main/java/com/xuyufengyy" module="xmh-common" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/modules/common/src/main/java/com/xuyufengyy/xmh" module="xmh-common" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                      <favorite_root url="file://$PROJECT_DIR$/modules/common/src/main/java/com/xuyufengyy/xmh/utils" module="xmh-common" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                        <favorite_root url="file://$PROJECT_DIR$/modules/common/src/main/java/com/xuyufengyy/xmh/utils/DateUtils.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      </favorite_root>
+                      <favorite_root url="file://$PROJECT_DIR$/modules/common/src/main/java/com/xuyufengyy/xmh/Message.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/common/src/main/java/com/xuyufengyy/xmh/FileInfo.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    </favorite_root>
+                  </favorite_root>
+                </favorite_root>
+              </favorite_root>
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/modules/common/src/test" module="xmh-common" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/modules/common/src/test/java" module="xmh-common" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </favorite_root>
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/modules/common/pom.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/modules/common/xmh-common.iml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/modules/domain" module="xmh-domain" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/modules/domain/src" module="xmh-domain" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/modules/domain/src/main" module="xmh-domain" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/modules/domain/src/main/java" module="xmh-domain" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/modules/domain/src/main/java/com" module="xmh-domain" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy" module="xmh-domain" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh" module="xmh-domain" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                      <favorite_root url="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/Area.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/Role.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/Admin.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/Product.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/AdminLog.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/Authority.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/BaseEntity.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/ScenicSpot.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/OrderEntity.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/EntityListener.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/AuthorityCategory.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    </favorite_root>
+                  </favorite_root>
+                </favorite_root>
+              </favorite_root>
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/modules/domain/src/test" module="xmh-domain" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/modules/domain/src/test/java" module="xmh-domain" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </favorite_root>
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/modules/domain/pom.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/modules/domain/xmh-domain.iml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/modules/pom.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/modules/service" module="xmh-service" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/modules/service/src" module="xmh-service" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/modules/service/src/main" module="xmh-service" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/modules/service/src/main/java" module="xmh-service" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/modules/service/src/main/java/com" module="xmh-service" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy" module="xmh-service" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh" module="xmh-service" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                      <favorite_root url="file://$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/AreaService.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/BaseService.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/MailService.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/RoleService.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/AdminService.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/ProductService.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/AdminLogService.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/AuthorityService.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/ScenicSpotService.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/AuthorityCategoryService.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    </favorite_root>
+                  </favorite_root>
+                </favorite_root>
+              </favorite_root>
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/modules/service/src/test" module="xmh-service" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/modules/service/src/test/java" module="xmh-service" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </favorite_root>
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/modules/service/pom.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/modules/service/xmh-service.iml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/modules/repository" module="xmh-repository" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/modules/repository/src" module="xmh-repository" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/modules/repository/src/main" module="xmh-repository" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/modules/repository/src/main/java" module="xmh-repository" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/modules/repository/src/main/java/com" module="xmh-repository" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/modules/repository/src/main/java/com/xuyufengyy" module="xmh-repository" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/modules/repository/src/main/java/com/xuyufengyy/xmh" module="xmh-repository" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                      <favorite_root url="file://$PROJECT_DIR$/modules/repository/src/main/java/com/xuyufengyy/xmh/impl" module="xmh-repository" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                        <favorite_root url="file://$PROJECT_DIR$/modules/repository/src/main/java/com/xuyufengyy/xmh/impl/AreaDaoImpl.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                        <favorite_root url="file://$PROJECT_DIR$/modules/repository/src/main/java/com/xuyufengyy/xmh/impl/BaseDaoImpl.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      </favorite_root>
+                      <favorite_root url="file://$PROJECT_DIR$/modules/repository/src/main/java/com/xuyufengyy/xmh/AreaDao.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/repository/src/main/java/com/xuyufengyy/xmh/RoleDao.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/repository/src/main/java/com/xuyufengyy/xmh/AdminDao.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/repository/src/main/java/com/xuyufengyy/xmh/ProductDao.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/repository/src/main/java/com/xuyufengyy/xmh/AdminLogDao.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/repository/src/main/java/com/xuyufengyy/xmh/AuthorityDao.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/repository/src/main/java/com/xuyufengyy/xmh/ScenicSpotDao.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                      <favorite_root url="file://$PROJECT_DIR$/modules/repository/src/main/java/com/xuyufengyy/xmh/AuthorityCategoryDao.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    </favorite_root>
+                  </favorite_root>
+                </favorite_root>
+              </favorite_root>
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/modules/repository/src/test" module="xmh-repository" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/modules/repository/src/test/java" module="xmh-repository" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </favorite_root>
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/modules/repository/pom.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/modules/repository/xmh-repository.iml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/modules/xmh-modules.iml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      </favorite_root>
+    </favorites_list>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/controller/AdminController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/controller/ProductController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="952">
+              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/products/xmh-api/src/main/java/com/xuyufengyy/xmh/controller/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1207">
+              <caret line="90" column="65" selection-start-line="90" selection-start-column="65" selection-end-line="90" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/resources/static/assets/extend/javascripts/list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/products/xmh-admin/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="48" column="21" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="48" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/admin/list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1309">
+              <caret line="77" column="50" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VoicePlayIn.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/products/xmh-api/src/main/java/com/xuyufengyy/xmh/dto/in/VoicePlayIn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/product/edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2890">
+              <caret line="170" column="25" selection-start-line="170" selection-start-column="25" selection-end-line="170" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/ProductService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1649">
+              <caret line="97" column="16" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>上传图片出错</find>
+      <find>directory</find>
+      <find>${image.path}</find>
+      <find>selected</find>
+      <find>uploadText</find>
+      <find>banner</find>
+      <find>jpa</find>
+      <find>responseBodyConverter</find>
+      <find>configureMessageConverters</find>
+      <find>text/json</find>
+      <find>products</find>
+      <find>message</find>
+      <find>queryScenicSopt</find>
+      <find>uploadTape</find>
+      <find>introduction</find>
+      <find>推荐</find>
+      <find>isEnabled</find>
+      <find>loginIp</find>
+      <find>image</find>
+      <find>listenIn</find>
+      <find>author</find>
+      <find>保存</find>
+      <find>楠宇</find>
+      <find>FastJsonRedisSerializer</find>
+      <find>authorities</find>
+      <find>keyGenerator</find>
+      <find>email</find>
+      <find>name</find>
+      <find>remote1</find>
+      <find>Set&lt;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>/</replace>
+      <replace>th:include=&quot;common</replace>
+      <replace>华夏实梦</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/modules</dir>
+      <dir>$PROJECT_DIR$/products/hny-admin/src/main/java/com/xuyufengyy/hny/controller</dir>
+      <dir>$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/hny</dir>
+      <dir>$PROJECT_DIR$/products/hny-admin</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/products/hny-admin/src/main/resources/templates</dir>
+      <dir>$PROJECT_DIR$/products/xmh-admin/src/main/java</dir>
+      <dir>$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/controller</dir>
+      <dir>$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh</dir>
+      <dir>$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/role</dir>
+      <dir>$PROJECT_DIR$/products/xmh-admin</dir>
+      <dir>$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates</dir>
+      <dir>$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/products/xmh-api/src/main/java/com/xuyufengyy/xmh/dto/in/HomeIn.java" />
+        <option value="$PROJECT_DIR$/modules/repository/src/main/java/com/xuyufengyy/xmh/impl/BaseDaoImpl.java" />
+        <option value="$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/ScenicSpotService.java" />
+        <option value="$PROJECT_DIR$/modules/repository/src/main/java/com/xuyufengyy/xmh/ScenicSpotDao.java" />
+        <option value="$PROJECT_DIR$/modules/repository/src/main/java/com/xuyufengyy/xmh/impl/ScenicSpotDaoImpl.java" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/scenic_spot/add.html" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/scenic_spot/edit.html" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/admin/edit.html" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/admin/list.html" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/product/view.html" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/security/Principal.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/034ade63-d25a-4de2-9df2-da140da5103c/console.sql" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/XmhAdminApplication.java" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/common/main_body_head.html" />
+        <option value="$PROJECT_DIR$/products/xmh-api/src/main/java/com/xuyufengyy/xmh/dto/in/VoicePlayIn.java" />
+        <option value="$PROJECT_DIR$/products/xmh-api/src/main/java/com/xuyufengyy/xmh/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/products/xmh-api/src/main/resources/application-prod.properties" />
+        <option value="$PROJECT_DIR$/products/xmh-api/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/resources/application-prod.properties" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/redis/Redis.java" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/redis/KryoRedisSerializer.java" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/redis/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/controller/AuthorityCategoryController.java" />
+        <option value="$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/AuthorityCategoryService.java" />
+        <option value="$PROJECT_DIR$/products/xmh-api/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/modules/domain/pom.xml" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/AdminLog.java" />
+        <option value="$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/BaseEntity.java" />
+        <option value="$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/OrderEntity.java" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/admin/add.html" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/product/add.html" />
+        <option value="$PROJECT_DIR$/modules/repository/src/main/java/com/xuyufengyy/xmh/ProductDao.java" />
+        <option value="$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/AdminService.java" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/ProductService.java" />
+        <option value="$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/Authority.java" />
+        <option value="$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/Product.java" />
+        <option value="$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/AuthorityCategory.java" />
+        <option value="$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/Admin.java" />
+        <option value="$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/Role.java" />
+        <option value="$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/ScenicSpot.java" />
+        <option value="$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/RoleService.java" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/controller/AreaController.java" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/controller/CommonController.java" />
+        <option value="$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/Area2.java" />
+        <option value="$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/Area.java" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/controller/ProductController.java" />
+        <option value="$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/product/edit.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="enabledProfiles">
+      <list>
+        <option value="jdk-1.8" />
+      </list>
+    </option>
+    <option name="disabledProfiles">
+      <list>
+        <option value="nexus" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="xmh :: products :: admin" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="xmh :: products :: admin" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="99" />
+    <option name="y" value="32" />
+    <option name="width" value="1600" />
+    <option name="height" value="932" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="XMH" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMH" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.31724137" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/security" />
+      <recent name="$PROJECT_DIR$/products/xmh-api/src/main/java/com/xuyufengyy/xmh/result" />
+      <recent name="$PROJECT_DIR$/products/xmh-api" />
+      <recent name="$PROJECT_DIR$/products/xmh-api/src/main/java/com/xuyufengyy/xmh" />
+      <recent name="$PROJECT_DIR$/products/xmh-api/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xuyufengyy.xmh" />
+      <recent name="com.xuyufengyy.xmh.dto.in" />
+      <recent name="com.xuyufengyy.xmh.impl" />
+      <recent name="com.xuyufengyy.xmh.controller" />
+      <recent name="com.xuyuefngyy" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/products/hny-web/src/main/resources/templates/news" />
+      <recent name="$PROJECT_DIR$/products/hny-web/src/main/resources/static/images/gemini" />
+      <recent name="$PROJECT_DIR$/products/hny-web/src/main/resources/static/images/gemini/znbgs" />
+      <recent name="$PROJECT_DIR$/products/hny-web/src/main/resources/static/scripts/plugins/system/t3/base-bs3/bootstrap/js" />
+      <recent name="$PROJECT_DIR$/products/hny-web/src/main/resources/static/scripts/media/system/js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.XmhAdminApplication">
+    <configuration name="XmhAdminApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xuyufengyy.xmh.XmhAdminApplication" />
+      <module name="xmh-admin" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xuyufengyy.hny.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="XmhApiApplication" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.xuyufengyy.xmh.XmhApiApplication" />
+      <module name="xmh-api" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="false" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="GrowUp" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
+    <configuration name="XmhAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="xmh-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xuyufengyy.xmh.XmhAdminApplication" />
+    </configuration>
+    <configuration name="XmhApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="xmh-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xuyufengyy.xmh.XmhApiApplication" />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <list>
+      <item itemvalue="Application.XmhAdminApplication" />
+      <item itemvalue="Application.XmhApiApplication" />
+      <item itemvalue="Spring Boot.XmhApiApplication" />
+      <item itemvalue="Spring Boot.XmhAdminApplication" />
+    </list>
+  </component>
+  <component name="SpringConfigurationTabSettings">
+    <option name="sortAlpha" value="true" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4edd2085-a48f-4980-899c-99c9e63bb8df" name="Default" comment="" />
+      <created>1500695638914</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1500695638914</updated>
+      <workItem from="1500695642778" duration="6128000" />
+      <workItem from="1500703341176" duration="133000" />
+      <workItem from="1500703556362" duration="117000" />
+      <workItem from="1500708192340" duration="6963000" />
+      <workItem from="1500856322967" duration="20884000" />
+      <workItem from="1500960098687" duration="9700000" />
+      <workItem from="1501028583019" duration="2947000" />
+      <workItem from="1501053986995" duration="10000" />
+      <workItem from="1501054118293" duration="1652000" />
+      <workItem from="1501115804827" duration="1224000" />
+      <workItem from="1501224296986" duration="8452000" />
+      <workItem from="1501290138132" duration="4908000" />
+      <workItem from="1501311551857" duration="8239000" />
+      <workItem from="1501396914972" duration="4895000" />
+      <workItem from="1501460708422" duration="6468000" />
+      <workItem from="1501562100012" duration="12716000" />
+      <workItem from="1501633706506" duration="9206000" />
+      <workItem from="1501657181622" duration="9008000" />
+      <workItem from="1501720365700" duration="25853000" />
+      <workItem from="1501806406544" duration="29741000" />
+      <workItem from="1502065837227" duration="6133000" />
+      <workItem from="1502153535934" duration="13299000" />
+      <workItem from="1502249480664" duration="13246000" />
+      <workItem from="1502325890200" duration="10400000" />
+      <workItem from="1502351464630" duration="160000" />
+      <workItem from="1502351843512" duration="3801000" />
+      <workItem from="1502410768431" duration="246000" />
+      <workItem from="1502411050212" duration="23266000" />
+      <workItem from="1502439682090" duration="3979000" />
+      <workItem from="1502498200071" duration="98000" />
+      <workItem from="1502498307744" duration="11787000" />
+      <workItem from="1502671247140" duration="26856000" />
+      <workItem from="1502756376702" duration="1769000" />
+      <workItem from="1502849461682" duration="15522000" />
+      <workItem from="1502930495138" duration="21690000" />
+      <workItem from="1502957010269" duration="2733000" />
+      <workItem from="1503103430123" duration="1145000" />
+      <workItem from="1503276430884" duration="27567000" />
+      <workItem from="1503363031899" duration="15690000" />
+      <workItem from="1503638798108" duration="9157000" />
+      <workItem from="1503724373638" duration="2003000" />
+      <workItem from="1503730525989" duration="5289000" />
+      <workItem from="1503899166855" duration="11678000" />
+      <workItem from="1503973699227" duration="7437000" />
+      <workItem from="1504151063991" duration="7173000" />
+      <workItem from="1504228350973" duration="2008000" />
+      <workItem from="1504324057934" duration="831000" />
+      <workItem from="1504487640366" duration="47000" />
+      <workItem from="1507770863251" duration="8828000" />
+      <workItem from="1507779925600" duration="2038000" />
+      <workItem from="1510649084385" duration="71000" />
+      <workItem from="1510896404444" duration="139000" />
+      <workItem from="1510896780588" duration="868000" />
+      <workItem from="1511832193687" duration="10235000" />
+      <workItem from="1511920847782" duration="9616000" />
+      <workItem from="1512001636807" duration="8119000" />
+      <workItem from="1512114804216" duration="1918000" />
+      <workItem from="1512351193183" duration="850000" />
+      <workItem from="1512437155449" duration="11710000" />
+      <workItem from="1512519156164" duration="8480000" />
+      <workItem from="1512540045196" duration="4470000" />
+      <workItem from="1512545800175" duration="3997000" />
+      <workItem from="1512976752426" duration="45000" />
+      <workItem from="1513055470840" duration="7183000" />
+      <workItem from="1513310418513" duration="24000" />
+      <workItem from="1514343317587" duration="137000" />
+      <workItem from="1514344626865" duration="23000" />
+      <workItem from="1514346061953" duration="1034000" />
+      <workItem from="1516242787955" duration="8438000" />
+      <workItem from="1517542846631" duration="1836000" />
+      <workItem from="1517807192655" duration="37000" />
+      <workItem from="1521078482960" duration="1271000" />
+      <workItem from="1521099160819" duration="42000" />
+      <workItem from="1521102617530" duration="295000" />
+      <workItem from="1521164607259" duration="31000" />
+      <workItem from="1521167512779" duration="99000" />
+      <workItem from="1521167671979" duration="22000" />
+      <workItem from="1521171994662" duration="1348000" />
+      <workItem from="1521189976710" duration="9000" />
+      <workItem from="1521253443694" duration="812000" />
+      <workItem from="1521259901509" duration="44000" />
+      <workItem from="1521439614709" duration="184000" />
+      <workItem from="1521689137585" duration="663000" />
+      <workItem from="1522292142310" duration="28000" />
+      <workItem from="1522716948533" duration="612000" />
+      <workItem from="1523240277177" duration="5781000" />
+      <workItem from="1523321362871" duration="370000" />
+      <workItem from="1523322685792" duration="730000" />
+      <workItem from="1523412971547" duration="23365000" />
+      <workItem from="1523493602854" duration="27948000" />
+      <workItem from="1523580625193" duration="15537000" />
+      <workItem from="1523844499431" duration="21475000" />
+      <workItem from="1523931014854" duration="2122000" />
+      <workItem from="1524211020783" duration="3424000" />
+      <workItem from="1524445954264" duration="2442000" />
+      <workItem from="1524532057997" duration="2227000" />
+      <workItem from="1524812307088" duration="933000" />
+      <workItem from="1525915293070" duration="1954000" />
+      <workItem from="1525921218285" duration="9964000" />
+      <workItem from="1526006270259" duration="2219000" />
+      <workItem from="1526259273089" duration="1834000" />
+      <workItem from="1526368157732" duration="1727000" />
+      <workItem from="1526435005098" duration="8791000" />
+      <workItem from="1526462026879" duration="782000" />
+      <workItem from="1526520412138" duration="4194000" />
+      <workItem from="1526605173439" duration="23231000" />
+      <workItem from="1526863760390" duration="15549000" />
+      <workItem from="1526958544688" duration="19231000" />
+      <workItem from="1527036972506" duration="24416000" />
+      <workItem from="1527122348151" duration="4258000" />
+      <workItem from="1527126635567" duration="2713000" />
+      <workItem from="1527129449759" duration="10426000" />
+      <workItem from="1527225542633" duration="11287000" />
+      <workItem from="1527250287892" duration="2718000" />
+      <workItem from="1527256310507" duration="2551000" />
+      <workItem from="1527324689881" duration="1355000" />
+      <workItem from="1527469436495" duration="6546000" />
+      <workItem from="1527491604152" duration="3000000" />
+      <workItem from="1527553697986" duration="17940000" />
+      <workItem from="1527640851907" duration="8294000" />
+      <workItem from="1527668972404" duration="2190000" />
+      <workItem from="1527728544292" duration="21120000" />
+      <workItem from="1527757095442" duration="213000" />
+      <workItem from="1527757314974" duration="993000" />
+      <workItem from="1527813556814" duration="8676000" />
+      <workItem from="1528073777783" duration="9559000" />
+      <workItem from="1528348430149" duration="7255000" />
+      <workItem from="1528417714089" duration="10766000" />
+      <workItem from="1528677082196" duration="6696000" />
+      <workItem from="1528765101827" duration="8016000" />
+      <workItem from="1528869141460" duration="5572000" />
+      <workItem from="1528939839020" duration="2101000" />
+      <workItem from="1529025095099" duration="1834000" />
+      <workItem from="1529565049039" duration="8323000" />
+      <workItem from="1529628992836" duration="18326000" />
+      <workItem from="1529742015578" duration="205000" />
+      <workItem from="1529896073410" duration="30000" />
+      <workItem from="1529911677031" duration="923000" />
+      <workItem from="1529979871468" duration="19000" />
+      <workItem from="1529980032738" duration="1762000" />
+      <workItem from="1530157775256" duration="10476000" />
+      <workItem from="1530336901149" duration="102000" />
+      <workItem from="1531113751463" duration="657000" />
+      <workItem from="1531186086614" duration="25000" />
+      <workItem from="1533020426496" duration="620000" />
+      <workItem from="1533109125574" duration="136000" />
+      <workItem from="1533607812459" duration="40000" />
+      <workItem from="1534137029863" duration="67000" />
+      <workItem from="1534137258739" duration="31000" />
+      <workItem from="1535505593701" duration="205000" />
+      <workItem from="1536570569216" duration="795000" />
+      <workItem from="1536571517450" duration="113000" />
+      <workItem from="1536652614377" duration="4486000" />
+      <workItem from="1536718139544" duration="7050000" />
+      <workItem from="1536893815168" duration="1289000" />
+      <workItem from="1537164650359" duration="1078000" />
+      <workItem from="1537421683675" duration="863000" />
+      <workItem from="1540784950618" duration="128000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="943884000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="99" y="32" width="1600" height="932" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5042598" side_tool="true" weight="0.33711693" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.3292683" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Designer" order="4" />
+      <window_info anchor="right" id="Database" order="8" weight="0.3292683" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24973376" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="5" />
+      <window_info anchor="bottom" id="Debug" order="12" sideWeight="0.49574015" weight="0.51497006" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info id="Palette&#9;" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32934132" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3269461" />
+      <window_info anchor="bottom" id="Spring" order="0" weight="0.32814372" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32990867" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.44159177" />
+      <window_info anchor="right" id="Bean Validation" order="7" weight="0.32991013" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="14" visible="true" weight="0.32934132" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3269461" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32762557" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Designer" order="4" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Spring" order="0" weight="0.32814372" />
+      <window_info anchor="bottom" id="Database Console" order="14" visible="true" weight="0.32934132" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3269461" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32990867" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5042598" side_tool="true" weight="0.33711693" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3269461" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32934132" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32876712" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.3292683" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.44159177" />
+      <window_info anchor="right" id="Database" order="8" weight="0.3292683" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24973376" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32762557" />
+      <window_info anchor="right" id="Bean Validation" order="7" weight="0.32991013" />
+      <window_info anchor="bottom" id="Debug" order="12" sideWeight="0.49574015" weight="0.51497006" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="提交项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交项目" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="353" />
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/products/xmh-api/src/main/java/com/xuyufengyy/xmh/result/ResultCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-api/src/main/java/com/xuyufengyy/xmh/result/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-api/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/aop/AdminLoggerInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="61" column="7" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-api/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="38" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.0/lombok-1.18.0.jar!/lombok/Setter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.0/lombok-1.18.0.jar!/lombok/Getter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/domain/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="21" selection-start-line="52" selection-start-column="7" selection-end-line="57" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/scenic_spot/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2397">
+          <caret line="141" column="11" selection-start-line="139" selection-start-column="7" selection-end-line="141" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-api/src/main/resources/application-prod.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/role/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="55" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/AuthorityCategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/admin/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-490" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/repository/src/main/java/com/xuyufengyy/xmh/ProductDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/resources/static/assets/extend/javascripts/input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/admin/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="166" column="18" lean-forward="true" selection-start-line="166" selection-start-column="18" selection-end-line="166" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/resources/application-prod.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/product/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2788">
+          <caret line="164" column="18" selection-start-line="158" selection-start-column="22" selection-end-line="164" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="183" column="49" lean-forward="true" selection-start-line="183" selection-start-column="49" selection-end-line="183" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="103" column="14" selection-start-line="103" selection-start-column="14" selection-end-line="103" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/AdminLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/Authority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/AuthorityCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/BaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="55" column="93" selection-start-line="55" selection-start-column="83" selection-end-line="55" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/EntityListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1147">
+          <caret line="87" column="11" selection-start-line="87" selection-start-column="11" selection-end-line="87" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/ScenicSpot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="54" column="6" lean-forward="true" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/OrderEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="31" column="26" selection-start-line="25" selection-start-column="4" selection-end-line="31" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/controller/AreaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-603">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/controller/AuthorityCategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="762">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/controller/AuthorityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-463">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/controller/CommonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-488">
+          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/controller/RoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-346">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/security/MyAnthencationProder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-638">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/security/MyAccessDeniedHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/Area2.java" />
+    <entry file="file://$PROJECT_DIR$/modules/domain/src/main/java/com/xuyufengyy/xmh/Area.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/product/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2890">
+          <caret line="170" column="25" selection-start-line="170" selection-start-column="25" selection-end-line="170" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/java/com/xuyufengyy/xmh/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/service/src/main/java/com/xuyufengyy/xmh/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1649">
+          <caret line="97" column="16" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-api/src/main/java/com/xuyufengyy/xmh/dto/in/VoicePlayIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-api/src/main/java/com/xuyufengyy/xmh/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="90" column="65" selection-start-line="90" selection-start-column="65" selection-end-line="90" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/resources/templates/admin/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="77" column="50" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/src/main/resources/static/assets/extend/javascripts/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/xmh-admin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="48" column="21" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="48" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31724137" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring (xmh-api)|Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31724137" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31724137" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31724137" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring|xmh-admin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31724137" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: org.apache.commons:commons-lang3:3.4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31724137" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

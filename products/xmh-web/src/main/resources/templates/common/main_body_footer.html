@@ -1,0 +1,57 @@
+<footer th:fragment="bodyFooter">
+    <div class="am-container">
+        <section class="am-g m-footer-container">
+            <section class="am-u-sm-12 am-u-md-12 am-u-lg-6">
+                <h2>关于我们</h2>
+                <p>楠宇科技成立于2017年，是一家提供专业计算机技术服务及软、硬件技术支持、弱电系统集成、网络工程、综合布线、软件开发、IT设备销售及维护、网站制作、楼宇对讲、视频监控工程为主营的聚合性企业。
+                    <a th:href="@{/about/index?navigationId=aboutIndex}" rel="nofollow">更多</a>
+                </p>
+            </section>
+            <section class="am-u-sm-12 am-u-md-6 am-u-lg-3">
+                <h2>最新资讯</h2>
+                <ul>
+                    <li th:each="news:${page.content}">
+                        <time class="am-fr"><label th:text="${news.clicks}"></label>90次阅读</time>
+                        <a th:href="@{/post/151}">台山社保局</a></li>
+                    <li>
+                        <time class="am-fr">67次阅读</time>
+                        <a th:href="@{/post/150}">江门市外海小学</a></li>
+                    <li>
+                        <time class="am-fr">72次阅读</time>
+                        <a th:href="@{/post/148}">恩城三小</a></li>
+                </ul>
+            </section>
+            <section class="am-u-sm-12 am-u-md-6 am-u-lg-3 subnav">
+                <h2>其他</h2>
+                <a th:href="@{/index?navigationId=index}" rel="nofollow">网站欣赏</a>
+                <a th:href="@{/service/cooperation?navigationId=serviceIndex}" rel="nofollow">合作流程</a>
+                <a th:href="@{/contact/index?navigationId=contactIndex}" rel="nofollow">联系我们</a>
+            </section>
+        </section>
+        <!--<section class="m-footer-flink">-->
+        <!--<h2>友情链接</h2>-->
+        <!--<a th:href="#" target="_blank">恩平政府</a>-->
+        <!--<a th:href="#" target="_blank">恩平信息网</a>-->
+        <!--</section>-->
+    </div>
+
+    <div class="m-footer-bottom">
+        <div class="am-container">
+            <div class="am-g">
+            <span class="m-u-sm-12 am-u-md-9 am-u-lg-10">Copyright @ 2010 - 2015 www.hebnykj.com. All Rights Reserved .
+                <a th:href="@{http://www.miitbeian.gov.cn/}" rel="external nofollow">粤ICP备11092500号-1</a>
+            </span>
+                <span class="m-u-sm-12 am-u-md-3 am-u-lg-2 ico am-text-right am-hide-sm-only a">
+                <a th:href="@{/}" data-am-popover="{content: '531555455', trigger: 'hover focus'}" rel="nofollow"><i
+                        class="am-icon-qq"></i></a>
+                <a th:href="@{/}" data-am-popover="{content: '18745720868', trigger: 'hover focus'}" rel="nofollow"><i
+                        class="am-icon-phone-square"></i></a>
+                <a th:href="@{/}" data-am-popover="{content: 'linan933099', trigger: 'hover focus'}" rel="nofollow"><i
+                        class="am-icon-weixin"></i></a>
+                <a th:href="@{/}" data-am-popover="{content: '531555455@qq.com', trigger: 'hover focus'}"
+                   rel="nofollow"><i class="am-icon-envelope"></i></a>
+            </span>
+            </div>
+        </div>
+    </div>
+</footer>

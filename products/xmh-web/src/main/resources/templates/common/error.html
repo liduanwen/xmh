@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head th:include="/common/main_head :: head">
+    <title>主页</title>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-quick-sidebar-over-content ">
+<!-- BEGIN HEADER -->
+<div th:include="/common/main_body_head :: bodyHead"></div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <div th:include="/common/main_body_menu_up :: bodyMenuUp"></div>
+    <!-- END SIDEBAR -->
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="form-group">
+                <dl>
+                    <dt>对不起，您的操作出现错误！</dt>
+                    <dd th:if="${content}" th:text="${content}"></dd>
+                    <dd th:each="constraintViolation:${constraintViolations}">
+                        <label th:text="|[${constraintViolation.propertyPath}]|"></label>
+                        <label th:text="${constraintViolation.message}"></label>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;" onclick="window.history.back(); return false;">返回上一页</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<div th:include="/common/main_body_footer :: bodyFooter"></div>
+<!-- END FOOTER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<div th:include="/common/main_body_javascript :: js"></div>
+<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

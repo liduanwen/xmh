@@ -1,0 +1,136 @@
+<div th:fragment="js">
+    <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+    <!-- BEGIN CORE PLUGINS -->
+    <!--[if lt IE 9]>
+    <script src="/assets/global/plugins/respond.min.js" th:src="@{/assets/global/plugins/respond.min.js}"></script>
+    <script src="/assets/global/plugins/excanvas.min.js" th:src="@{/assets/global/plugins/excanvas.min.js}"></script>
+    <![endif]-->
+    <script src="/assets/global/plugins/jquery.min.js" type="text/javascript"
+            th:src="@{/assets/global/plugins/jquery.min.js}"></script>
+    <script src="/assets/global/plugins/jquery-migrate.min.js" type="text/javascript"
+            th:src="@{/assets/global/plugins/jquery-migrate.min.js}"></script>
+    <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+    <script src="/assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"
+            th:src="@{/assets/global/plugins/jquery-ui/jquery-ui.min.js}"></script>
+    <script src="/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"
+            th:src="@{/assets/global/plugins/bootstrap/js/bootstrap.min.js}"></script>
+    <script src="/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"
+            th:src="@{/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js}"></script>
+    <script src="/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"
+            th:src="@{/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js}"></script>
+    <script src="/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"
+            th:src="@{/assets/global/plugins/jquery.blockui.min.js}"></script>
+    <script src="/assets/global/plugins/jquery.cokie.min.js" type="text/javascript"
+            th:src="@{/assets/global/plugins/jquery.cokie.min.js}"></script>
+    <script src="/assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"
+            th:src="@{/assets/global/plugins/uniform/jquery.uniform.min.js}"></script>
+    <script src="/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"
+            th:src="@{/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js}"></script>
+    <!-- END CORE PLUGINS -->
+    <!-- BEGIN: Page level plugins -->
+    <script src="/assets/global/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"
+            th:src="@{/assets/global/plugins/fancybox/source/jquery.fancybox.pack.js}"></script>
+    <script src="/assets/global/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js" type="text/javascript"
+            th:src="@{/assets/global/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js}"></script>
+    <script src="/assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js" type="text/javascript"
+            th:src="@{/assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js}"></script>
+    <!-- BEGIN:File Upload Plugin JS files-->
+    <script src="/assets/extend/fileinput/js/plugins/sortable.js" type="text/javascript"
+            th:src="@{/assets/extend/fileinput/js/plugins/sortable.js}"></script>
+    <script src="/assets/extend/fileinput/js/fileinput.js" type="text/javascript"
+            th:src="@{/assets/extend/fileinput/js/fileinput.js}"></script>
+    <script src="/assets/extend/fileinput/js/locales/fr.js" type="text/javascript"
+            th:src="@{/assets/extend/fileinput/js/locales/fr.js}"></script>
+    <script src="/assets/extend/fileinput/js/locales/es.js" type="text/javascript"
+            th:src="@{/assets/extend/fileinput/js/locales/es.js}"></script>
+    <script src="/assets/extend/fileinput/themes/explorer-fa/theme.js" type="text/javascript"
+            th:src="@{/assets/extend/fileinput/themes/explorer-fa/theme.js}"></script>
+    <script src="/assets/extend/fileinput/themes/fa/theme.js" type="text/javascript"
+            th:src="@{/assets/extend/fileinput/themes/fa/theme.js}"></script>
+    <!-- END:File Upload Plugin JS files-->
+    <!-- END: Page level plugins -->
+    <script src="/assets/global/scripts/metronic.js" type="text/javascript"
+            th:src="@{/assets/global/scripts/metronic.js}"></script>
+    <script src="/assets/admin/layout/scripts/layout.js" type="text/javascript"
+            th:src="@{/assets/admin/layout/scripts/layout.js}"></script>
+    <script src="/assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"
+            th:src="@{/assets/admin/layout/scripts/quick-sidebar.js}"></script>
+    <script src="/assets/admin/layout/scripts/demo.js" type="text/javascript"
+            th:src="@{/assets/admin/layout/scripts/demo.js}"></script>
+    <script src="/assets/admin/pages/scripts/inbox.js" type="text/javascript"
+            th:src="@{/assets/admin/pages/scripts/inbox.js}"></script>
+
+    <script src="/assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"
+            type="text/javascript"
+            th:src="@{/assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js}"></script>
+    <script src="/assets/global/plugins/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"
+            type="text/javascript"
+            th:src="@{/assets/global/plugins/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js}"></script>
+
+    <script src="/assets/global/plugins/bootbox/bootbox.min.js" type="text/javascript"
+            th:src="@{/assets/global/plugins/bootbox/bootbox.min.js}"></script>
+
+    <!--BEGIN 表单提交验证-->
+    <script src="/assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"
+            th:src="@{/assets/global/plugins/jquery-validation/js/jquery.validate.min.js}"></script>
+    <!--BEGIN 瞬时提示-->
+    <script src="/assets/global/plugins/bootstrap-toastr/toastr.min.js" type="text/javascript"
+            th:src="@{/assets/global/plugins/bootstrap-toastr/toastr.min.js}"></script>
+
+    <script src="/assets/extend/javascripts/ui-toastr.js" type="text/javascript"
+            th:src="@{/assets/extend/javascripts/ui-toastr.js}"></script>
+    <script src="/assets/extend/javascripts/input.js" type="text/javascript"
+            th:src="@{/assets/extend/javascripts/input.js}"></script>
+    <script src="/assets/extend/javascripts/list.js" type="text/javascript"
+            th:src="@{/assets/extend/javascripts/list.js}"></script>
+    <script src="/assets/extend/javascripts/file-upload.js" type="text/javascript"
+            th:src="@{/assets/extend/javascripts/file-upload.js}"></script>
+
+    <script type="text/javascript" charset="utf-8" src="/assets/extend/javascripts/ueditor1_4_3_3/ueditor.config.js"
+            th:src="@{/assets/extend/javascripts/ueditor1_4_3_3/ueditor.config.js}"></script>
+    <script type="text/javascript" charset="utf-8" src="/assets/extend/javascripts/ueditor1_4_3_3/ueditor.all.js"
+            th:src="@{/assets/extend/javascripts/ueditor1_4_3_3/ueditor.all.js}"></script>
+    <script type="text/javascript" charset="utf-8" src="/assets/extend/javascripts/ueditor1_4_3_3/lang/zh-cn/zh-cn.js"
+            th:src="@{/assets/extend/javascripts/ueditor1_4_3_3/lang/zh-cn/zh-cn.js}"></script>
+
+    <script src="/assets/extend/javascripts/jquery.lSelect.js" type="text/javascript"
+            th:src="@{/assets/extend/javascripts/jquery.lSelect.js}"></script>
+    <script src="/assets/extend/javascripts/audio/audio.min.js" type="text/javascript"
+            th:src="@{/assets/extend/javascripts/audio/audio.min.js}"></script>
+    <script src="/assets/extend/javascripts/audio/audio.common.js" type="text/javascript"
+            th:src="@{/assets/extend/javascripts/audio/audio.common.js}"></script>
+    <script th:inline="javascript">
+        jQuery(document).ready(function () {
+            // initiate layout and plugins
+            Metronic.init(); // init metronic core components
+            Layout.init(); // init current layout
+            QuickSidebar.init(); // init quick sidebar
+            Demo.init(); // init demo features
+            Inbox.init();
+
+            /*<![CDATA[*/
+            //菜单
+            var menuId = [[${session.menuId}]];
+
+            if (menuId != null && menuId != "") {
+                var $menu = $("#" + menuId).parent();
+                var $ul = $menu.parent();
+                var $li = $ul.parent();
+                $li.prop("class", "start open");
+                $li.find(".arrow").prop("class", "arrow open");
+                $ul.prop("style", "display: block;");
+                $menu.prop("class", "active");
+            }
+
+            //瞬时消息
+            var flashMessage = [[${flashMessage}]];
+            if (flashMessage != null && flashMessage != "") {
+                var type = flashMessage.messageType;
+                var content = flashMessage.content;
+                $.message(type, content);
+            }
+            /*]]>*/
+        });
+    </script>
+    <!-- END JAVASCRIPTS -->
+</div>

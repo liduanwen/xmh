@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+<head>
+    <head th:include="/common/main_head :: head"></head>
+    <title>楠宇科技</title>
+</head>
+<body>
+<header th:include="/common/main_body_head :: bodyHeadNavgation" class="m-hd"></header>
+<div class="m-header-banner m-list-header" style="background: url(/images/service-bg.jpg) 50% 0 no-repeat fixed;">
+    <section class="am-container">
+        <hgroup data-am-scrollspy="{animation:'slide-bottom', delay: 317}">
+            <h2>服务内容</h2>
+            <p>我们期待与您的携手，以设计驱动企业价值增长，我们与伙伴共同成长。</p>
+        </hgroup>
+    </section>
+</div>
+<nav class="m-cat-nav">
+    <ul class="am-container">
+        <li><a th:href="@{/service/index?navigationId=serviceIndex}"><i class="icon-chevron-right"></i>服务内容</a></li>
+        <li><a th:href="@{/service/cooperation?navigationId=serviceIndex}"><i class="icon-chevron-right"></i>合作流程</a>
+        </li>
+        <li class="am-active"><a th:href="@{/service/payment_method?navigationId=serviceIndex}"><i
+                class="icon-chevron-right"></i>付款方式</a></li>
+    </ul>
+</nav>
+<div class="am-container">
+    <article class="m-mn-box">
+        <section>
+            <p>为方便客户更加快捷方便的付款，我们支持多种常用付款方式，具体如下：</p>
+            <p>支付宝：xiaonanaa@126.com</p>
+            <p>微信：linan933099</p>
+            <p>工商银行：6222023500010359145</p>
+            <p>农业银行：</p>
+            <p>本地用户可以现金支付</p>
+        </section>
+    </article>
+</div>
+<footer th:include="/common/main_body_footer :: bodyFooter" class="m-footer"></footer>
+<div th:include="/common/main_body_javascript :: js"></div>
+</body>
+</html>

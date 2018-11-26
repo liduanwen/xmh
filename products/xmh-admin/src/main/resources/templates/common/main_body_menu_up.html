@@ -1,0 +1,64 @@
+<!-- BEGIN SIDEBAR -->
+<div th:fragment="bodyMenuUp">
+    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+    <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+    <div class="page-sidebar navbar-collapse collapse">
+        <!-- BEGIN SIDEBAR MENU -->
+        <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+            <!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+            <li class="sidebar-toggler-wrapper">
+                <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                <div class="sidebar-toggler">
+                </div>
+                <!-- END SIDEBAR TOGGLER BUTTON -->
+            </li>
+            <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+            <li class="start " sec:authorize="hasAnyAuthority('admin:scenicSpot', 'admin:product')">
+                <a href="javascript:;">
+                    <i class="icon-settings"></i>
+                    <span class="title">产品管理</span>
+                    <span class="arrow "></span>
+                </a>
+                <ul class="sub-menu">
+                    <li sec:authorize="hasAuthority('admin:scenicSpot')">
+                        <a th:href="@{/scenic_spot/list?menuId=scenicSpot}" id="scenicSpot">景区管理</a>
+                    </li>
+                    <li sec:authorize="hasAuthority('admin:product')">
+                        <a th:href="@{/product/list?menuId=product}" id="product">产品</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="start "
+                sec:authorize="hasAnyAuthority('admin:authorityCategory', 'admin:authority', 'admin:role', 'admin:admin', 'admin:area')">
+                <a href="javascript:;">
+                    <i class="icon-settings"></i>
+                    <span class="title">系统管理</span>
+                    <span class="arrow "></span>
+                </a>
+                <ul class="sub-menu">
+                    <li sec:authorize="hasAuthority('admin:authorityCategory')">
+                        <a th:href="@{/authority_category/list?menuId=authorityCategory}"
+                           id="authorityCategory">权限分类管理</a>
+                    </li>
+                    <li sec:authorize="hasAuthority('admin:authority')">
+                        <a th:href="@{/authority/list?menuId=authority}" id="authority">权限管理</a>
+                    </li>
+                    <li sec:authorize="hasAuthority('admin:role')">
+                        <a th:href="@{/role/list?menuId=role}" id="role">角色管理</a>
+                    </li>
+                    <li sec:authorize="hasAuthority('admin:admin')">
+                        <a th:href="@{/admin/list?menuId=admin}" id="admin">管理员管理</a>
+                    </li>
+                    <li sec:authorize="hasAuthority('admin:area')">
+                        <a th:href="@{/area/list?menuId=area}" id="area">地区管理</a>
+                    </li>
+                    <!--<li>-->
+                    <!--<a th:href="@{/setting/edit?menuId=setting}" id="setting">系统设置</a>-->
+                    <!--</li>-->
+                </ul>
+            </li>
+        </ul>
+        <!-- END SIDEBAR MENU -->
+    </div>
+</div>
+<!-- END SIDEBAR -->

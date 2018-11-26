@@ -1,0 +1,88 @@
+<div th:fragment="js">
+    <script src="/scripts/echo.min.js"></script>
+    <script src="/scripts/jquery.min.js"></script>
+    <script src="/scripts/amazeui.min.js"></script>
+    <script src="/scripts/jquery.qrcode.min.js"></script>
+    <script th:inline="javascript" type="text/javascript">
+        /*<![CDATA[*/
+        jQuery(document).ready(function () {
+            //导航
+            var navigationId = [[${session.navigationId}]];
+            if (navigationId == null || navigationId == "") {
+                $("#index").addClass("am-active");
+            }
+            $("#" + navigationId).addClass("am-active");
+
+
+            //导航
+//            var menuId = [[${session.menuId}]];
+//            if(menuId == null || menuId == ""){
+//                $("#index").addClass("am-active");
+//            }
+//            $("#"+menuId).addClass("am-active");
+
+            echo.init({
+                offset: 100,
+                throttle: 250,
+                unload: false,
+                callback: function (element, op) {
+                    console.log(element, 'has been', op + 'ed')
+                }
+            });
+            // 图片赖加载
+
+            var str = "http://www.imj2.com";
+            $("#code").qrcode({
+                render: "table",
+                width: 100,
+                height: 100,
+                text: str
+            });
+        });
+
+        // 二维码生成
+        //返回顶部
+        function imj2() {
+            this.init();
+        }
+
+        imj2.prototype = {
+            constructor: imj2,
+            init: function () {
+                this._initBackTop();
+            },
+            _initBackTop: function () {
+                var $backTop = this.$backTop = $('<div class="m-top-cbbfixed">' +
+                    '<a class="m-top-weixin m-top-cbbtn"">' +
+                    '<span class="m-top-weixin-icon"></span><div></div>' +
+                    '</a>' +
+                    '<a class="m-top-go m-top-cbbtn">' +
+                    '<span class="m-top-goicon"></span>' +
+                    '</a>' +
+                    '</div>');
+                $('body').append($backTop);
+
+                $backTop.click(function () {
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, 120);
+                });
+
+                var timmer = null;
+                $(window).bind("scroll", function () {
+                    var d = $(document).scrollTop(),
+                        e = $(window).height();
+                    0 < d ? $backTop.css("bottom", "10px") : $backTop.css("bottom", "-90px");
+                    clearTimeout(timmer);
+                    timmer = setTimeout(function () {
+                        clearTimeout(timmer)
+                    }, 100);
+                });
+            }
+
+        };
+        var imj2 = new imj2();
+        //end返回顶部
+        /*]]>*/
+    </script>
+</div>

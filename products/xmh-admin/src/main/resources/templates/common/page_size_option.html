@@ -1,0 +1,24 @@
+<div th:fragment="pageSizeOption">
+    <a class="btn btn-default btn-sm dropdown-toggle" href="#" data-toggle="dropdown" data-hover="dropdown"
+       data-close-others="true" aria-expanded="false">
+        每页显示 <i class="fa fa-angle-down"></i>
+    </a>
+    <ul id="pageSizeOption" class="dropdown-menu pull-right">
+        <li>
+            <a href="javascript:void(0);" th:class="${page.size eq 10} ? 'current'"
+               th:style="${page.size eq 10} ? 'background:#8dbfef;'" val="10">10条</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" th:class="${page.size eq 20} ? 'current'"
+               th:style="${page.size eq 20} ? 'background:#8dbfef;'" val="20">20条</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" th:class="${page.size eq 50} ? 'current'"
+               th:style="${page.size eq 50} ? 'background:#8dbfef;'" val="50">50条</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" th:class="${page.size eq 100} ? 'current'"
+               th:style="${page.size eq 100} ? 'background:#8dbfef;'" val="100">100条</a>
+        </li>
+    </ul>
+</div>

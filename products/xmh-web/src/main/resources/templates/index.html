@@ -1,0 +1,271 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+<head>
+    <head th:include="/common/main_head :: head"></head>
+    <title>楠宇科技</title>
+    <style>
+        .p1 {
+            text-indent: 2em;
+        }
+
+        .p2 {
+            text-align: right;
+        }
+
+        dl {
+            list-style: none;
+            width: 240px;
+            margin: 20px auto 0px auto;
+        }
+
+        dt {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .title {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .list {
+            border-bottom: 1px solid #ACACAE;
+            line-height: 40px;
+            text-align: left;
+        }
+
+        .xd_btn {
+            line-height: 40px;
+            text-align: center;
+            border: 0px;
+        }
+
+        .xd_btn a {
+            width: 170px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            display: block;
+            font-family: 微软雅黑;
+            font-size: 18px;
+            color: rgb(255, 183, 0);
+            margin: 20px auto 0px;
+            background: rgb(255, 255, 255);
+            border-radius: 15px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(255, 183, 0);
+            border-image: initial;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<header th:include="/common/main_body_head :: bodyHeadNavgation" class="m-hd"></header>
+<div data-am-widget="slider" class="am-slider am-slider-i2" data-am-flexslider="{controlNav:false}">
+    <ul class="am-slides">
+        <li class="am-slider-images" style="background-image: url(/images/banner1.jpg)">
+            <div class="am-container am-slider-desc">
+                <div class="am-slider-content">
+                    <h2 class="am-slider-title am-animation-slide-left"
+                        data-am-scrollspy="{animation: 'slide-left', delay: 100}">企业IT外包定制服务</h2>
+                    <p data-am-scrollspy="{animation:'slide-right', delay: 600}" class="am-animation-slide-right">
+                        来自楠宇科技永不畏惧的创新力量</p>
+                    <a th:href="@{/service/index?navigationId=serviceIndex}"
+                       class="am-btn-xs am-btn am-btn-danger am-radius am-animation-slide-bottom am-animation-delay-1"
+                       rel="nofollow" data-am-scrollspy="{animation:'slide-bottom', delay: 100}">READ MORE</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="m-services m-home-box">
+    <section class="am-container">
+        <hgroup class="am-animation-slide-bottom am-animation-delay-1"
+                data-am-scrollspy="{animation:'slide-bottom', delay: 100}">
+            <h2>我们的服务</h2>
+            <p>专业为黑龙江省中小型企业提供网络工程、门禁系统、IDC机房组建、监控安防、综合布线、财务软件、公共广播、楼宇对讲、网络规划等订制服务。</p>
+        </hgroup>
+        <ul class="am-avg-sm-2 am-avg-md-2 am-avg-lg-4 am-thumbnails">
+            <li class="am-animation-slide-top" data-am-scrollspy="{animation:'slide-top', delay: 0}">
+                <h2>综合布线</h2>
+                <p>综合布线系统是智能化办公室建设数字化信息系统基础设施，是将所有语音、数据等系统进行统一的规划设计的结构化布线系统，为办公提供信息化、智能化的物质介质，支持将来语音、数据、图文、多媒体等综合应用。</p>
+            </li>
+            <li class="am-animation-slide-top" data-am-scrollspy="{animation:'slide-top', delay: 0}">
+                <h2>监控安防</h2>
+                <p>
+                    安防监控系统是应用光纤、同轴电缆或微波在其闭合的环路内传输视频信号，并从摄像到图像显示和记录构成独立完整的系统。报警系统设备对非法入侵进行报警，产生的报警信号输入报警主机，报警主机触发监控系统录像并记录。</p>
+            </li>
+            <li class="am-animation-slide-top am-animation-delay-1"
+                data-am-scrollspy="{animation:'slide-top', delay: 100}">
+                <h2>门禁系统</h2>
+                <p>门禁系统是在智能建筑领域，门禁系统早已超越了单纯的门道及钥匙管理，它已经逐渐发展成为一套完整的出入管理系统。它在工作环境安全、人事考勤管理等行政管理工作中发挥着较大的作用。</p>
+            </li>
+            <li class="am-animation-slide-top am-animation-delay-1"
+                data-am-scrollspy="{animation:'slide-top', delay: 100}">
+                <h2>网络规划</h2>
+                <p>从测量到设计再到布局规划，一系列的弱电系统线路规划设计方案，为企业排忧解难。</p>
+            </li>
+        </ul>
+    </section>
+</div>
+<div class="am-container m-home-box">
+    <hgroup data-am-scrollspy="{animation:'slide-bottom', delay: 100}">
+        <h2>无忧办公室整理术</h2>
+        <p class="p1">
+            整理术一词出自日本知名设计师佐藤可士和，将「超级整理术」分为三大阶段，从有形到无形分别是：空间整理、信息整理以及思考整理。从随身物品、办公环境开始，透过对于空间整理的习惯，养成对于思考整理的敏锐，只要按部就班，时时刻刻磨练整理技巧，便能促使思绪清晰、提高判断能力、开启灵感之门，大幅提升工作效率与精致度！</p>
+        <p class="p2">-----------佐藤可士和</p>
+    </hgroup>
+    <section class="m-case-list">
+        <ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-3 am-thumbnails">
+            <li style="border:1px solid blue;width: 300px;height: 380px;margin-right: 90px;">
+                <dl>
+                    <dt><img src="/images/gemini/wyzlsbg/wybgzls_img_01.jpg" alt="it运维" title="it运维"/></dt>
+                    <dd class="title">小型办公室IT网络搭建</dd>
+                    <dd class="list">-基础网络建设</dd>
+                    <dd class="list">-电话语音系统</dd>
+                    <dd class="list">-无线覆盖系统</dd>
+                    <dd class="list">-监控门禁安防</dd>
+                    <dd class="list xd_btn"><a href="#">1999元起</a></dd>
+                </dl>
+            </li>
+            <li style="border:1px solid blue;width: 300px;height: 380px;margin-right: 90px;">
+                <dl>
+                    <dt><img src="/images/gemini/wyzlsbg/wybgzls_img_02.jpg" alt="it运维服务" title="it运维服务"/></dt>
+                    <dd class="title">机房线缆整理术</dd>
+                    <dd class="list">-机房线缆整理</dd>
+                    <dd class="list">-标识管理</dd>
+                    <dd class="list">-机房除尘</dd>
+                    <dd class="list">-机房安全检测</dd>
+                    <dd class="list xd_btn"><a href="#">99元起</a></dd>
+                </dl>
+            </li>
+            <li style="border:1px solid blue;width: 300px;height: 380px;margin-right: 90px;">
+                <dl>
+                    <dt><img src="/images/gemini/wyzlsbg/wybgzls_img_03.jpg" alt="it桌面运维" title="it桌面运维"/></dt>
+                    <dd class="title">办公桌面线缆整理术</dd>
+                    <dd class="list">-所有桌面设备线路整理</dd>
+                    <dd class="list">-地接线路整理</dd>
+                    <dd class="list">-桌面设备除尘清洁</dd>
+                    <dd class="list">-桌面标识管理</dd>
+                    <dd class="list xd_btn"><a href="#">9.9元起</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </section>
+</div>
+<hr/>
+<div class="am-container m-home-box">
+    <hgroup data-am-scrollspy="{animation:'slide-bottom', delay: 100}">
+        <h2>案例展示</h2>
+        <p>多终端一体化创新设计解决方案响应式自适应设计。</p>
+    </hgroup>
+    <section class="m-case-list">
+        <ul class="am-avg-sm-1 am-avg-md-3 am-avg-lg-3 am-thumbnails">
+            <li data-am-scrollspy="{animation:'slide-bottom', delay: 174}">
+                <figure class="effect-lily">
+                    <img src="/images/loading.gif" alt="研磨时光菜单设计" data-echo="/images/case/timg.jpg"
+                         class="am-img-responsive"/>
+                    <figcaption>
+                        <h3>黑龙江捷森经贸有限公司</h3>
+                        <!--<p>专注高端定制婚纱摄影</p>-->
+                        <a th:href="@{/post/62.html}">View more</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-am-scrollspy="{animation:'slide-bottom', delay: 119}">
+                <figure class="effect-lily">
+                    <img src="/images/loading.gif" alt="鲜果果水果宣传单张设计与印刷" data-echo="/images/case/timg2.jpg"
+                         class="am-img-responsive"/>
+                    <figcaption>
+                        <h3>黑龙江寒地黑土物流管理有限公司</h3>
+                        <!--<p>南京唯一一家欧洲教育管理培训中心</p>-->
+                        <a th:href="@{/post/62.html}">View more</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-am-scrollspy="{animation:'slide-bottom', delay: 196}">
+                <figure class="effect-lily">
+                    <img src="/images/loading.gif" alt="俊贰网络品牌VI设计" data-echo="/images/case/11.jpg"
+                         class="am-img-responsive"/>
+                    <figcaption>
+                        <h3>哈尔滨东酷装饰有限公司</h3>
+                        <!--<p>我想我会遇见你，像恋人般重逢美丽</p>-->
+                        <a th:href="@{/post/62.html}">View more</a>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </section>
+</div>
+<hr/>
+<section class="am-container m-home-box m-partner">
+
+    <hgroup data-am-scrollspy="{animation:'slide-bottom', delay: 100}">
+        <h2>协作品牌</h2>
+        <p>用最具影响力品牌协助，并全力协助新兴品牌，我们以网络助力众多品牌走向行业领先地位，鼎力相助每一个梦想。</p>
+    </hgroup>
+    <ul class="am-avg-lg-8 am-avg-md-8 am-avg-sm-2  am-thumbnails"
+        data-am-scrollspy="{animation:'slide-bottom', delay: 100}">
+        <li data-am-scrollspy="{animation:'slide-bottom', delay: 190}">
+            <img src="/images/collaborative_brand/hw.jpg" alt="华为" class="am-img-responsive"/>
+        </li>
+        <li data-am-scrollspy="{animation:'slide-bottom', delay: 44}">
+            <img src="/images/collaborative_brand/ap.jpg" alt="安普" class="am-img-responsive"/>
+        </li>
+        <li data-am-scrollspy="{animation:'slide-bottom', delay: 72}">
+            <img src="/images/collaborative_brand/hkws.jpg" alt="海康威视" class="am-img-responsive"/>
+        </li>
+        <li data-am-scrollspy="{animation:'slide-bottom', delay: 99}">
+            <img src="/images/collaborative_brand/tp.jpg" alt="tp-link" class="am-img-responsive"/>
+        </li>
+        <li data-am-scrollspy="{animation:'slide-bottom', delay: 45}">
+            <img src="/images/collaborative_brand/sk.jpg" alt="思科" class="am-img-responsive"/>
+        </li>
+        <li data-am-scrollspy="{animation:'slide-bottom', delay: 399}">
+            <img src="/images/collaborative_brand/fyx.jpg" alt="飞鱼星" class="am-img-responsive"/>
+        </li>
+        <li data-am-scrollspy="{animation:'slide-bottom', delay: 286}">
+            <img src="/images/collaborative_brand/dlink.jpg" alt="d-link" class="am-img-responsive"/>
+        </li>
+        <li data-am-scrollspy="{animation:'slide-bottom', delay: 114}">
+            <img src="/images/collaborative_brand/dh.jpg" alt="大华" class="am-img-responsive"/>
+        </li>
+    </ul>
+</section>
+<div class="m-home-box m-contact">
+    <section class="am-container">
+        <hgroup data-am-scrollspy="{animation:'slide-bottom', delay: 100}">
+            <h2>联系我们</h2>
+            <p>你可以通过以下方式和我们取得联系。</p>
+        </hgroup>
+        <ul class="am-avg-lg-4 am-avg-md-4 am-avg-sm-2 am-thumbnails">
+            <li data-am-scrollspy="{animation:'slide-bottom', delay: 2}"><i class="am-icon-qq"></i> 531555455
+            </li>
+            <li data-am-scrollspy="{animation:'slide-bottom', delay: 41}"><i class="am-icon-phone-square"></i>
+                187-4572-0868
+            </li>
+            <li data-am-scrollspy="{animation:'slide-bottom', delay: 51}">
+                <i class="am-icon-weixin"></i> linan933099
+            </li>
+            <li data-am-scrollspy="{animation:'slide-bottom', delay: 211}">
+                <i class="am-icon-envelope"></i> 531555455@qq.com
+            </li>
+        </ul>
+    </section>
+</div>
+<div class="m-contact-us">
+    <section class="am-container">
+        <div class="am-g">
+            <span class="m-u-sm-12 am-u-md-9 am-u-lg-10" data-am-scrollspy="{animation:'slide-left', delay: 100}">拥有不一样的高端品牌网站，你还在等什么？点击马上和我们联系！</span>
+            <span class="m-u-sm-12 am-u-md-3 am-u-lg-2" data-am-scrollspy="{animation:'slide-right', delay: 100}">
+                <a target="_blank" th:href="@{|http://wpa.qq.com/msgrd?v=3&amp;uin=531555455&amp;site=qq&amp;menu=yes|}"
+                   class="am-btn am-btn-danger am-radius" rel="external nofollow">马上联系</a>
+            </span>
+        </div>
+    </section>
+</div>
+<footer th:include="/common/main_body_footer :: bodyFooter" class="m-footer"></footer>
+<div th:include="/common/main_body_javascript :: js"></div>
+</body>
+</html>

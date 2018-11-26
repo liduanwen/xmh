@@ -1,0 +1,72 @@
+<div th:fragment="pag">
+    <div class="col-md-5 col-sm-12">
+        <div class="dataTables_info" id="sample_1_info" role="status" aria-live="polite"></div>
+    </div>
+    <div class="col-md-7 col-sm-12">
+        <div th:if="${page.totalPages gt 0}" class="btn-arrow-link pull-right" id="sample_6_paginate">
+            <ul class="pagination">
+                <!-- 首页 -->
+                <li class="paginate_button previous" th:classappend="${page.first} ? disabled : ''"
+                    aria-controls="sample_6" tabindex="0">
+                    <a th:href="!${page.first} ? |javascript:void(0);|"
+                       th:onclick="!${page.first} ? |javascript:$.pageSkip(this);|" th:attr="pageIndex=0">
+                        <i class="fa fa-angle-double-left"></i>
+                    </a>
+                </li>
+                <!-- 上一页 -->
+                <li class="paginate_button previous" th:classappend="${page.first} ? disabled : ''"
+                    aria-controls="sample_6" tabindex="0">
+                    <a th:href="!${page.first} ? |javascript:void(0);|"
+                       th:onclick="!${page.first} ? |javascript:$.pageSkip(this);|"
+                       th:attr="pageIndex=*{page.number - 1} ? ${page.number - 1} : 0">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                </li>
+                <!-- 迭代生成页码 -->
+                <li class="paginate_button">
+                    <span th:if="${(page.number -2) gt 0}">...</span>
+                </li>
+                <li class="paginate_button "
+                    th:each="i : ${#numbers.sequence(1, page.totalPages gt (page.number + 2) ? page.number + 3 : page.totalPages)}"
+                    th:classappend="${(page.number + 1) eq i} ? 'active' : ''">
+                    <a th:if="${i ge (page.number-1)}" th:attr="pageIndex=${i} - 1" href="javascript:void(0);"
+                       th:onclick="|javascript:$.pageSkip(this);|">
+                        <span th:text="${i}"></span>
+                    </a>
+                </li>
+                <li class="paginate_button">
+                    <span th:if="${page.totalPages gt (page.number +3)}">...</span>
+                </li>
+                <!-- 下一页 -->
+                <li class="paginate_button next" th:classappend="${page.last} ? disabled : ''" aria-controls="sample_6"
+                    tabindex="0">
+                    <a th:href="!${page.last} ? |javascript:void(0);|"
+                       th:onclick="!${page.last} ? |javascript:$.pageSkip(this);|"
+                       th:attr="pageIndex=${page.number} + 1">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </li>
+                <!-- 尾页 -->
+                <li class="paginate_button next" th:classappend="${page.last} ? disabled : ''" aria-controls="sample_6"
+                    tabindex="0">
+                    <a th:href="!${page.last} ? |javascript:void(0);|"
+                       th:onclick="!${page.last} ? |javascript:$.pageSkip(this);|"
+                       th:attr="pageIndex=${page.totalPages} - 1">
+                        <i class="fa fa-angle-double-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        共<span id="pageTotal" th:text="${page.totalElements}"></span>条
+                        共<span th:text="${page.totalPages}"></span>页
+                        到第&nbsp;<input id="pageNumber" name="page" style="width: 20px;height: 18px;"
+                                       th:value="${page.Number+1}" maxlength="9" onpaste="return false;"/>&nbsp;页
+                        <button type="submit" style="border: none;line-height: 12px;">跳转</button>
+                    </a>
+                </li>
+            </ul>
+            <input type="hidden" id="pageSize" name="size" th:value="${page.size}"/>
+        </div>
+    </div>
+</div>
+

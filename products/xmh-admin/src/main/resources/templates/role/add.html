@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head th:include="common/main_head :: head">
+    <title>角色添加管理</title>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-quick-sidebar-over-content ">
+<!-- BEGIN HEADER -->
+<div th:include="common/main_body_head :: bodyHead"></div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <div th:include="common/main_body_menu_up :: bodyMenuUp"></div>
+    <!-- END SIDEBAR -->
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="page-bar">
+                <ul class="page-breadcrumb">
+                    <li>
+                        <i class="fa fa-home"></i>
+                        <a th:href="@{/home}">主页</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a>系统管理</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a th:href="@{/authority/list}">角色管理</a>
+                    </li>
+                </ul>
+            </div>
+            <form id="addForm" th:action="@{save}" th:method="post" class="form-horizontal" role="form">
+                <div class="portlet box red-sunglo">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-plus"></i>角色添加
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"><span class="required">* </span>名称：</label>
+                            <div class="col-md-4 input">
+                                <input type="text" name="name" class="form-control" maxlength="200" placeholder="名称"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"><span class="required">* </span>描述：</label>
+                            <div class="col-md-4 input">
+                                <input type="text" name="description" class="form-control" maxlength="200"
+                                       placeholder="描述"/>
+                            </div>
+                        </div>
+
+                        <!--<div id="datatable_orders_wrapper" class="dataTables_wrapper dataTables_extended_wrapper no-footer">-->
+                        <!--<div class="table-scrollable">-->
+                        <table class="table table-striped table-bordered table-hover dataTable no-footer"
+                               id="datatable_orders" aria-describedby="datatable_orders_info" role="grid">
+                            <thead th:each="authorityCategory:${authorityCategoryTree}">
+                            <tr role="row" class="heading">
+                                <th width="15%" tabindex="0" aria-controls="datatable_orders" rowspan="1" colspan="1">
+                                    <a href="javascript:;" class="selectAll" title="全选"
+                                       th:text="${authorityCategory.name}"></a>
+                                </th>
+                                <td>
+                                                <span th:each="authority:${authorityCategory.authorities}">
+                                                    <input type="checkbox" name="authorityIds"
+                                                           th:value="${authority.id}"/>
+                                                    <label th:text="${authority.name}"></label>
+                                                </span>
+                                </td>
+                            </tr>
+                            </thead>
+                        </table>
+                        <!--</div>-->
+                        <!--</div>-->
+                        <div class=" form-actions fluid">
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button type="submit" class="btn red-sunglo">提交</button>
+                                    <button id="backButton" type="button" class="btn default">返回</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<div th:include="common/main_body_footer :: bodyFooter" class="page-footer"></div>
+<!-- END FOOTER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<div th:include="common/main_body_javascript :: js"></div>
+<!-- END JAVASCRIPTS -->
+<script>
+    jQuery(document).ready(function () {
+        var $addForm = $("#addForm");
+        var $selectAll = $("#addForm .selectAll");
+
+        $selectAll.click(function () {
+            var $this = $(this);
+            var $thisCheckbox = $this.closest("tr").find(":checkbox");
+
+            if ($thisCheckbox.filter(":checked").size() > 0) {
+                $thisCheckbox.parent().removeClass("checked");
+                $thisCheckbox.prop("checked", false);
+            } else {
+                $thisCheckbox.parent().addClass("checked");
+                $thisCheckbox.prop("checked", true);
+            }
+            return false;
+        });
+
+        $addForm.validate({
+            rules: {
+                name: "required",
+                description: "required",
+                authorityIds: "required"
+            },
+            errorPlacement: function (error, element) {
+                var fieldSet = element.closest("div.form-group");
+                if (fieldSet.size() > 0) {
+                    error.appendTo(fieldSet);
+                } else {
+                    $("table").addClass("has-error");
+                    error.appendTo(element.closest("td"));
+                }
+            }
+        });
+    });
+</script>
+</body>
+<!-- END BODY -->
+</html>

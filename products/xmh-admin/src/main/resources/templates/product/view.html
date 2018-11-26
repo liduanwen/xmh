@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head th:include="common/main_head :: head">
+    <title>产品管理</title>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-quick-sidebar-over-content ">
+<!-- BEGIN HEADER -->
+<div th:include="common/main_body_head :: bodyHead"></div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <div th:include="common/main_body_menu_up :: bodyMenuUp"></div>
+    <!-- END SIDEBAR -->
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="page-bar">
+                <ul class="page-breadcrumb">
+                    <li>
+                        <i class="fa fa-home"></i>
+                        <a th:href="@{/home}">主页</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a>产品管理</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a th:href="@{/product/list}">产品管理</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="form-horizontal" role="form">
+                <div class="portlet box red-sunglo">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-edit"></i>产品查看
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"><span class="required">* </span>地区：</label>
+                            <div class="col-md-4 input">
+                                <label class="control-label" th:text="${product.scenicSpot.area.fullName}"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"><span class="required">* </span>景区：</label>
+                            <div class="col-md-4 input">
+                                <label class="control-label" th:text="${product.scenicSpot.name}"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"><span class="required">* </span>名称：</label>
+                            <div class="col-md-4 input">
+                                <label class="control-label" th:text="${product.name}"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"><span class="required">* </span>标题：</label>
+                            <div class="col-md-4 input">
+                                <label class="control-label" th:text="${product.title}"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"><span class="required">* </span>作者：</label>
+                            <div class="col-md-4 input">
+                                <label class="control-label" th:text="${product.author}"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"><span class="required">* </span>展示图片：</label>
+                            <div class="col-md-4 input">
+                                <label class="control-label">
+                                    <img th:src="${imageView}+${product.image}" style="width: 80px;height: 80px;"/>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"><span class="required">* </span>原价：</label>
+                            <div class="col-md-4 input">
+                                <label class="control-label" th:text="${product.originalPrice}"
+                                       style="color: red;text-decoration:line-through;"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"><span class="required">* </span>优惠价：</label>
+                            <div class="col-md-4 input">
+                                <label class="control-label" th:text="${product.preferentialPrice}"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"><span class="required">* </span>文本：</label>
+                            <div class="col-md-4 input">
+                                <textarea id="uploadText" name="uploadText" style="width: 100%;" rows="20"
+                                          oninput="comment('prompt', this, '200');" maxlength="200"
+                                          th:utext="${product.uploadText}" readonly></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"><span class="required">* </span>录音：</label>
+                            <div class="col-md-4 input">
+                                <label class="control-label">
+                                    <audio controls="controls" preload="preload">
+                                        <source th:src="${voiceView}+${product.uploadTape}" type="audio/mpeg">
+                                    </audio>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class=" form-actions fluid">
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button id="backButton" type="button" class="btn default">返回</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<div th:include="common/main_body_footer :: bodyFooter" class="page-footer"></div>
+<!-- END FOOTER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<div th:include="common/main_body_javascript :: js"></div>
+<!-- END JAVASCRIPTS -->
+<script th:inline="javascript">
+    var $editForm = $("#editForm");
+    var $area = $("#areaId");
+    var $scenicSpotId = $("#scenicSpotId");
+
+    jQuery(document).ready(function () {
+        $area.lSelect({
+            url: "/common/area"
+        });
+
+        jQuery.validator.addClassRules({
+            areaId: {
+                required: true
+            }
+        });
+
+        $editForm.validate({
+            rules: {
+                scenicSpotId: "required",
+                name: "required",
+                originalPrice: "required",
+                preferentialPrice: "required",
+                uploadText: "required"
+
+            }
+        });
+    });
+
+    function queryScenicSopt() {
+        $.ajax({
+            url: "/product/query_scenic_spot",
+            type: "POST",
+            data: {areaId: $area.val()},
+            dataType: "json",
+            success: function (data) {
+                var select = '<option value="">请选择...</option>';
+                $.each(data, function (value, name) {
+                    select += '<option value="' + value + '"';
+                    if (value == [[${product.scenicSpot.id}]]) {
+                        select += 'selected';
+                    }
+                    select += '>' + name + '<\/option>';
+                });
+                $scenicSpotId.empty();
+                $scenicSpotId.append(select);
+            }
+        });
+    }
+
+    //字数控制
+    function comment(id, _this, number) {
+        $("#" + id).text(number - $(_this).val().length);
+    }
+</script>
+</body>
+<!-- END BODY -->
+</html>
